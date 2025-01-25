@@ -6939,3 +6939,85 @@ Function logs:      https://app.netlify.com/sites/vine-rank/logs/functions
 Edge function Logs: https://app.netlify.com/sites/vine-rank/logs/edge-functions
 Unique deploy URL:  https://67956d44f35d5f5a6b6f5932--vine-rank.netlify.app
 Website URL:        https://doitforthevine.org
+[feature/data-sync 2e95162] post deploy build sync
+ 11 files changed, 820 insertions(+), 593 deletions(-)
+ delete mode 100644 build/asset-manifest.json
+ delete mode 100644 build/index.html
+ delete mode 100644 build/static/css/main.e6c13ad2.css
+ delete mode 100644 build/static/css/main.e6c13ad2.css.map
+ delete mode 100644 build/static/js/488.e51471bb.chunk.js
+ delete mode 100644 build/static/js/488.e51471bb.chunk.js.map
+ delete mode 100644 build/static/js/main.7f0ffe99.js
+ delete mode 100644 build/static/js/main.7f0ffe99.js.LICENSE.txt
+ delete mode 100644 build/static/js/main.7f0ffe99.js.map
+To github.com:taha-abbasi/do-it-for-the-vine-rank-data.git
+   11101d6..2e95162  feature/data-sync -> feature/data-sync
+Done!
+Compiled successfully.
+
+File sizes after gzip:
+
+  150.34 kB  build/static/js/main.7f0ffe99.js
+  2.7 kB     build/static/js/488.e51471bb.chunk.js
+  264 B      build/static/css/main.e6c13ad2.css
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+Deploying to Netlify production...
+Deploy path:        /Users/tahaabbasi/Developer/solana/spl/vine-project/build
+Functions path:     /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify/functions
+Configuration path: /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify.toml
+Functions folder "/Users/tahaabbasi/Developer/solana/spl/vine-project/netlify/functions" specified but it doesn't exist! Will proceed without deploying functions
+Deploying to main site URL...
+- Uploading blobs to deploy store...
+
+​
+Netlify Build                                                 
+────────────────────────────────────────────────────────────────
+​
+❯ Version
+  @netlify/build 29.58.7
+​
+❯ Flags
+  deployId: 67956d5ccb7e966b79c1e014
+  open: false
+  prod: true
+  prodIfUnlocked: false
+  skipFunctionsCache: false
+​
+❯ Current directory
+  /Users/tahaabbasi/Developer/solana/spl/vine-project
+​
+❯ Config file
+  /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify.toml
+​
+❯ Context
+  dev
+✔ Finished uploading blobs to deploy store
+- Hashing files...
+- Looking for a functions cache...
+✔ No cached functions were found
+✔ Finished hashing 
+- CDN diffing files...
+✔ CDN requesting 0 files
+- Uploading 0 files
+✔ Finished uploading 0 assets
+- Waiting for deploy to go live...
+✔ Deploy is live!
+
+Build logs:         https://app.netlify.com/sites/vine-rank/deploys/67956d5ccb7e966b79c1e014
+Function logs:      https://app.netlify.com/sites/vine-rank/logs/functions
+Edge function Logs: https://app.netlify.com/sites/vine-rank/logs/edge-functions
+Unique deploy URL:  https://67956d5ccb7e966b79c1e014--vine-rank.netlify.app
+Website URL:        https://doitforthevine.org
