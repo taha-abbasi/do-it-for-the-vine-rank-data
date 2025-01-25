@@ -53,6 +53,12 @@ while IFS= read -r TOKEN; do
     --header "content-Type: application/json" \
     --header "token: $SOLSCAN_API_KEY")
 
+  # Debug: is it valid JSON?
+  if ! echo "$RESPONSE" | jq empty 2>/dev/null; then
+    echo "ERROR: Invalid JSON for $NAME ($SYMBOL): $RESPONSE"
+    continue
+  fi
+
   # Extract additional fields
   HOLDER_COUNT=$(echo "$RESPONSE" | jq -r '.data.holder // 0')
   VOLUME_24H=$(echo "$RESPONSE" | jq -r '.data.volume_24h // 0')
