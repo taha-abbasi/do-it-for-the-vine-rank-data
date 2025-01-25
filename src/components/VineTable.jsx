@@ -53,6 +53,48 @@ export default function VineTable() {
   const [loading, setLoading] = useState(true);
   const [showAll, setShowAll] = useState(false);
 
+  const [lastUpdated, setLastUpdated] = useState("");
+
+  function formatUTCDate(isoString) {
+    if (!isoString) return ""; // handle empty case
+
+    // Parse the string as UTC
+    const date = new Date(isoString);
+
+    // Prepare arrays or an Intl formatter
+    const months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+
+    // Extract day, month, year, hour, minute in UTC
+    const day = date.getUTCDate(); // 1-31
+    const monthIndex = date.getUTCMonth(); // 0-11
+    const year = date.getUTCFullYear(); // e.g. 2025
+    const hours = date.getUTCHours(); // 0-23
+    const minutes = date.getUTCMinutes(); // 0-59
+
+    // Convert month index to month name
+    const monthName = months[monthIndex];
+
+    // Pad minutes if needed, e.g. '07'
+    const paddedMinutes = String(minutes).padStart(2, "0");
+
+    // Construct the final string
+    // e.g. "25-January-2025 at 15:21 UTC"
+    return `${day}-${monthName}-${year} at ${hours}:${paddedMinutes} UTC`;
+  }
+
   // Columns, with CA hidden by default
   const [columns, setColumns] = useState({
     name: true,
@@ -90,16 +132,24 @@ export default function VineTable() {
         return response.json();
       })
       .then((data) => {
-        // Sort by holders descending initially
-        const sortedData = data.sort((a, b) => b.holders - a.holders);
-        setTokenData(sortedData);
+        // data is expected to have shape: { lastUpdated: string, tokens: array }
 
-        // By default, filter out tokens < 1M market cap
-        const initialDisplayed = sortedData.filter(
+        // 1) Save lastUpdated to state
+        if (data.lastUpdated) {
+          setLastUpdated(data.lastUpdated);
+        }
+
+        // 2) Sort tokens by holders desc initially
+        const sortedTokens = data.tokens.sort((a, b) => b.holders - a.holders);
+        setTokenData(sortedTokens);
+
+        // 3) By default, filter out tokens < 1M cap
+        const initialDisplayed = sortedTokens.filter(
           (t) => t.market_cap > 1_000_000
         );
         setDisplayedTokens(initialDisplayed);
         setSearchTokens(initialDisplayed);
+
         setLoading(false);
       })
       .catch((error) => {
@@ -213,8 +263,12 @@ export default function VineTable() {
   //
 
   // *Holders*
-  const holdersSorted = [...displayedTokens].sort((a, b) => b.holders - a.holders);
-  const vineIndexHolders = holdersSorted.findIndex((t) => t.name === "Vine Coin");
+  const holdersSorted = [...displayedTokens].sort(
+    (a, b) => b.holders - a.holders
+  );
+  const vineIndexHolders = holdersSorted.findIndex(
+    (t) => t.name === "Vine Coin"
+  );
   const threeByHolders = [
     holdersSorted[vineIndexHolders - 1],
     holdersSorted[vineIndexHolders],
@@ -223,7 +277,9 @@ export default function VineTable() {
 
   // Attach rank within displayedTokens
   const holdersViewItems = threeByHolders.map((tok) => {
-    const absoluteIndex = holdersSorted.findIndex((x) => x.address === tok.address);
+    const absoluteIndex = holdersSorted.findIndex(
+      (x) => x.address === tok.address
+    );
     return {
       rank: absoluteIndex + 1, // local rank among displayed holders
       token: tok,
@@ -231,7 +287,9 @@ export default function VineTable() {
   });
 
   // *Volume*
-  const volumeSorted = [...displayedTokens].sort((a, b) => b.volume_24h - a.volume_24h);
+  const volumeSorted = [...displayedTokens].sort(
+    (a, b) => b.volume_24h - a.volume_24h
+  );
   const vineIndexVolume = volumeSorted.findIndex((t) => t.name === "Vine Coin");
   const threeByVolume = [
     volumeSorted[vineIndexVolume - 1],
@@ -240,7 +298,9 @@ export default function VineTable() {
   ].filter(Boolean);
 
   const volumeViewItems = threeByVolume.map((tok) => {
-    const absoluteIndex = volumeSorted.findIndex((x) => x.address === tok.address);
+    const absoluteIndex = volumeSorted.findIndex(
+      (x) => x.address === tok.address
+    );
     return {
       rank: absoluteIndex + 1, // local rank among displayed by volume
       token: tok,
@@ -250,7 +310,9 @@ export default function VineTable() {
   // If needed, define a function to handle row click in mini-tables
   const handleMiniTableClick = (token) => {
     // For example, scroll to the row in main table:
-    const mainIndex = displayedTokens.findIndex((x) => x.address === token.address);
+    const mainIndex = displayedTokens.findIndex(
+      (x) => x.address === token.address
+    );
     if (mainIndex !== -1 && vineRef.current) {
       vineRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
     }
@@ -284,6 +346,20 @@ export default function VineTable() {
           volumeViewItems={volumeViewItems}
           onRowClick={handleMiniTableClick}
         />
+
+        {/* EXAMPLE: Display "Last Updated" (if any) just below quick summaries, top-right */}
+        {!loading && lastUpdated && (
+          <Box
+            style={{
+              textAlign: "right",
+              fontStyle: "italic",
+              marginBottom: "1rem",
+            }}
+          >
+            <div>Last Updated: {formatUTCDate(lastUpdated)}</div>
+            <div>Updates Every 10 Minutes</div>
+          </Box>
+        )}
 
         {/* Main Table Header (includes small search bar) */}
         <Box
@@ -440,11 +516,12 @@ export default function VineTable() {
 
             <TableBody>
               {searchTokens.map((token) => (
-                <TableRow key={token.address} ref={token.name === "Vine Coin" ? vineRef : null}>
+                <TableRow
+                  key={token.address}
+                  ref={token.name === "Vine Coin" ? vineRef : null}
+                >
                   {/* Rank in main table */}
-                  <TableCell>
-                    {displayedTokens.indexOf(token) + 1}
-                  </TableCell>
+                  <TableCell>{displayedTokens.indexOf(token) + 1}</TableCell>
 
                   {/* Name with logo if available */}
                   {columns.name && (
@@ -507,7 +584,11 @@ export default function VineTable() {
         </TableContainer>
 
         {/* Filter Menu (columns) */}
-        <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleCloseMenu}>
+        <Menu
+          anchorEl={anchorEl}
+          open={Boolean(anchorEl)}
+          onClose={handleCloseMenu}
+        >
           {Object.keys(columns).map((col) => (
             <MenuItem key={col}>
               <FormControlLabel
