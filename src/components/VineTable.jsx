@@ -53,6 +53,8 @@ export default function VineTable() {
   const [loading, setLoading] = useState(true);
   const [showAll, setShowAll] = useState(false);
 
+  const [lastUpdated, setLastUpdated] = useState("");
+
   // Columns, with CA hidden by default
   const [columns, setColumns] = useState({
     name: true,
@@ -90,16 +92,24 @@ export default function VineTable() {
         return response.json();
       })
       .then((data) => {
-        // Sort by holders descending initially
-        const sortedData = data.sort((a, b) => b.holders - a.holders);
-        setTokenData(sortedData);
+        // data is expected to have shape: { lastUpdated: string, tokens: array }
 
-        // By default, filter out tokens < 1M market cap
-        const initialDisplayed = sortedData.filter(
+        // 1) Save lastUpdated to state
+        if (data.lastUpdated) {
+          setLastUpdated(data.lastUpdated);
+        }
+
+        // 2) Sort tokens by holders desc initially
+        const sortedTokens = data.tokens.sort((a, b) => b.holders - a.holders);
+        setTokenData(sortedTokens);
+
+        // 3) By default, filter out tokens < 1M cap
+        const initialDisplayed = sortedTokens.filter(
           (t) => t.market_cap > 1_000_000
         );
         setDisplayedTokens(initialDisplayed);
         setSearchTokens(initialDisplayed);
+
         setLoading(false);
       })
       .catch((error) => {
@@ -284,6 +294,13 @@ export default function VineTable() {
           volumeViewItems={volumeViewItems}
           onRowClick={handleMiniTableClick}
         />
+
+        {/* EXAMPLE: Display "Last Updated" (if any) just below quick summaries, top-right */}
+        {!loading && lastUpdated && (
+          <Box style={{ textAlign: "right", fontStyle: "italic", marginBottom: "1rem" }}>
+            Last Updated: {lastUpdated}
+          </Box>
+        )}
 
         {/* Main Table Header (includes small search bar) */}
         <Box
