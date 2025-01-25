@@ -1,3 +1,5 @@
+// src/components/VineTable.jsx
+
 import React, { useEffect, useState, useRef } from "react";
 import {
   CssBaseline,
@@ -346,10 +348,25 @@ export default function VineTable() {
         </Box>
 
         {/* Main Table */}
-        <TableContainer component={Paper} style={{ overflowX: "auto" }}>
-          <Table>
+        <TableContainer
+          component={Paper}
+          sx={{
+            maxHeight: 800,
+            overflow: "auto",
+          }}
+        >
+          <Table stickyHeader>
             <TableHead>
-              <TableRow style={{ backgroundColor: "#02be8e" }}>
+              <TableRow
+                sx={{
+                  "& th": {
+                    backgroundColor: "#02be8e",
+                    color: "#ffffff",
+                    fontWeight: "bold",
+                  },
+                }}
+              >
+                {/* <TableRow style={{ backgroundColor: "#02be8e" }}> */}
                 <TableCell style={{ color: "#ffffff", fontWeight: "bold" }}>
                   Rank
                 </TableCell>
@@ -427,7 +444,6 @@ export default function VineTable() {
             <TableBody>
               {searchTokens.map((token) => (
                 <TableRow key={token.address}>
-                  {/* Use displayedTokens.indexOf(token) + 1 for rank in main table */}
                   <TableCell>{displayedTokens.indexOf(token) + 1}</TableCell>
                   {columns.name && (
                     <TableCell>
