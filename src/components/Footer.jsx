@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Grid,
@@ -10,9 +10,25 @@ import {
   Divider,
   Stack,
   Button,
+  Snackbar,
+  Alert
 } from "@mui/material";
 
 export default function Footer() {
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+
+  // Donation address
+  const donationAddress = "9jJbYgykByUFURADCkpMmPAx4VvcvjuDemetMDVxNDUQ";
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(donationAddress);
+    setOpenSnackbar(true);
+  };
+
+  const handleCloseSnackbar = () => {
+    setOpenSnackbar(false);
+  };
+
   return (
     <Box
       component="footer"
@@ -42,19 +58,26 @@ export default function Footer() {
             <Typography variant="h6" sx={{ fontWeight: "bold", marginBottom: 1 }}>
               Support My Work
             </Typography>
-            <Typography variant="body2" sx={{ marginBottom: 2 }}>
+            <Typography variant="body2" sx={{ marginBottom: 1 }}>
               Solscan APIs cost <strong>$199/month</strong>. Donations are
               appreciated:
             </Typography>
+
+            {/* Donation address + copy button */}
             <Typography
               variant="body2"
-              sx={{
-                fontFamily: "monospace",
-                wordBreak: "break-all",
-              }}
+              sx={{ fontFamily: "monospace", wordBreak: "break-all" }}
             >
-              9jJbYgykByUFURADCkpMmPAx4VvcvjuDemetMDVxNDUQ
+              {donationAddress}
             </Typography>
+            <Button
+              variant="outlined"
+              size="small"
+              onClick={handleCopy}
+              sx={{ marginTop: 1 }}
+            >
+              Copy Address
+            </Button>
           </Grid>
 
           {/* Column 2: Connect with the Vine Community */}
@@ -122,7 +145,6 @@ export default function Footer() {
 
             <Divider sx={{ marginY: 2 }} />
 
-            {/* Button to join Vine Tribe */}
             <Button
               variant="contained"
               color="primary"
@@ -135,6 +157,22 @@ export default function Footer() {
           </Grid>
         </Grid>
       </Container>
+
+      {/* Snackbar for copy confirmation */}
+      <Snackbar
+        open={openSnackbar}
+        autoHideDuration={3000}
+        onClose={handleCloseSnackbar}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+      >
+        <Alert
+          onClose={handleCloseSnackbar}
+          severity="success"
+          sx={{ width: "100%" }}
+        >
+          Donation address copied!
+        </Alert>
+      </Snackbar>
     </Box>
   );
 }
