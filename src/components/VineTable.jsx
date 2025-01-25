@@ -110,7 +110,7 @@ export default function VineTable() {
   // Search
   const [searchQuery, setSearchQuery] = useState("");
   // Sorting
-  const [sortField, setSortField] = useState("holders");
+  const [sortField, setSortField] = useState("volume_24h");
   const [sortOrder, setSortOrder] = useState("desc");
 
   // For column filter menu
@@ -140,7 +140,7 @@ export default function VineTable() {
         }
 
         // 2) Sort tokens by holders desc initially
-        const sortedTokens = data.tokens.sort((a, b) => b.holders - a.holders);
+        const sortedTokens = data.tokens.sort((a, b) => b.volume_24h - a.volume_24h);
         setTokenData(sortedTokens);
 
         // 3) By default, filter out tokens < 1M cap
