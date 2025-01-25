@@ -1,7 +1,11 @@
 #!/bin/bash
 
+# 1) Source the .env file to load environment variables
+if [ -f .env ]; then
+  source .env
+fi
+
 # Constants
-API_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkQXQiOjE3Mzc3OTIxMjk1ODAsImVtYWlsIjoiZmluYW5jZUBhYmJhc2lpbmR1c3RyaWVzLmNvbSIsImFjdGlvbiI6InRva2VuLWFwaSIsImFwaVZlcnNpb24iOiJ2MiIsImlhdCI6MTczNzc5MjEyOX0.JbGO-66fFXeUEJjNw-XrdINk7QAtRETMHm36pSlZErw"
 BASE_URL="https://pro-api.solscan.io/v2.0"
 OUTPUT_FILE="./public/top_tokens_with_holders.json"
 
@@ -16,7 +20,7 @@ echo "Fetching top 100 tokens..."
 TOKEN_LIST=$(curl --silent --request GET \
   --url "$BASE_URL/token/list?sort_by=holder&sort_order=desc&page=1&page_size=100" \
   --header "content-Type: application/json" \
-  --header "token: $API_KEY")
+  --header "token: $SOLSCAN_API_KEY")
 
 if [[ -z "$TOKEN_LIST" ]]; then
   echo "Failed to fetch the token list. Exiting."
@@ -47,7 +51,7 @@ while IFS= read -r TOKEN; do
   RESPONSE=$(curl --silent --request GET \
     --url "$BASE_URL/token/meta?address=$ADDRESS" \
     --header "content-Type: application/json" \
-    --header "token: $API_KEY")
+    --header "token: $SOLSCAN_API_KEY")
 
   # Extract additional fields
   HOLDER_COUNT=$(echo "$RESPONSE" | jq -r '.data.holder // 0')
