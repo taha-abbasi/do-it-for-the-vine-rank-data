@@ -27,74 +27,6 @@ function QuickSummaryHighlights({
 }) {
   return (
     <Grid container spacing={3} sx={{ marginBottom: 1 }}>
-      {/* Left Column -> Rank by Holders */}
-      <Grid item xs={12} md={6}>
-        <Box
-          sx={{
-            // Set total column height
-            height: 300,
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <Typography variant="h5" sx={{ paddingY: 1 }}>
-            Rank by Holders
-          </Typography>
-
-          {/* Scrollable area below the heading */}
-          <Box sx={{ flex: 1, overflow: "auto" }}>
-            <TableContainer component={Paper} sx={{ height: "100%" }}>
-              <Table>
-                <TableHead>
-                  <TableRow sx={{ backgroundColor: "#02be8e" }}>
-                    <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
-                      Rank
-                    </TableCell>
-                    <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
-                      Name
-                    </TableCell>
-                    <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
-                      Holders
-                    </TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {holdersViewItems.map(({ rank, token }) => (
-                    <TableRow
-                      key={token.address}
-                      onClick={() => onRowClick?.(token)}
-                      sx={{
-                        cursor: "pointer",
-                        backgroundColor:
-                          token.name === "Vine Coin" ? "#e8f8f3" : "inherit",
-                      }}
-                    >
-                      <TableCell>{rank}</TableCell>
-                      <TableCell>
-                        {token.icon && (
-                          <img
-                            src={token.icon}
-                            alt={token.name}
-                            style={{
-                              width: 24,
-                              height: 24,
-                              marginRight: 8,
-                              verticalAlign: "middle",
-                            }}
-                          />
-                        )}
-                        {token.name}
-                      </TableCell>
-                      <TableCell>{token.holders.toLocaleString()}</TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </Box>
-        </Box>
-      </Grid>
-
       {/* Right Column -> Rank by Volume */}
       <Grid item xs={12} md={6}>
         <Box
@@ -154,6 +86,74 @@ function QuickSummaryHighlights({
                       <TableCell>
                         {token.volume_24h?.toLocaleString() || "N/A"}
                       </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </Box>
+        </Box>
+      </Grid>
+      
+      {/* Left Column -> Rank by Holders */}
+      <Grid item xs={12} md={6}>
+        <Box
+          sx={{
+            // Set total column height
+            height: 300,
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Typography variant="h5" sx={{ paddingY: 1 }}>
+            Rank by Holders
+          </Typography>
+
+          {/* Scrollable area below the heading */}
+          <Box sx={{ flex: 1, overflow: "auto" }}>
+            <TableContainer component={Paper} sx={{ height: "100%" }}>
+              <Table>
+                <TableHead>
+                  <TableRow sx={{ backgroundColor: "#02be8e" }}>
+                    <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
+                      Rank
+                    </TableCell>
+                    <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
+                      Name
+                    </TableCell>
+                    <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
+                      Holders
+                    </TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {holdersViewItems.map(({ rank, token }) => (
+                    <TableRow
+                      key={token.address}
+                      onClick={() => onRowClick?.(token)}
+                      sx={{
+                        cursor: "pointer",
+                        backgroundColor:
+                          token.name === "Vine Coin" ? "#e8f8f3" : "inherit",
+                      }}
+                    >
+                      <TableCell>{rank}</TableCell>
+                      <TableCell>
+                        {token.icon && (
+                          <img
+                            src={token.icon}
+                            alt={token.name}
+                            style={{
+                              width: 24,
+                              height: 24,
+                              marginRight: 8,
+                              verticalAlign: "middle",
+                            }}
+                          />
+                        )}
+                        {token.name}
+                      </TableCell>
+                      <TableCell>{token.holders.toLocaleString()}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
