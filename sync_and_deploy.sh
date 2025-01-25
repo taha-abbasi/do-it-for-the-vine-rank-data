@@ -3,6 +3,11 @@
 # Purpose: Update token data, commit changes, push to data-sync branch, then build & deploy to Netlify.
 
 set -e  # Exit immediately if a command exits with a non-zero status
+echo pwd
+# Move into the directory containing this script so relative paths work
+cd "$(dirname "$0")"
+
+echo pwd
 
 #######################################
 # 1. Run the token update script
