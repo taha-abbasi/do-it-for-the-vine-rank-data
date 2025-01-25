@@ -90,4 +90,21 @@ SORTED_TOKENS=$(printf "%s\n" "${TOKEN_HOLDER_DATA[@]}" | jq -s 'sort_by(.holder
 # Step 4: Save to JSON file
 echo "$SORTED_TOKENS" >"$OUTPUT_FILE"
 
-echo "Top tokens with holders saved to $OUTPUT_FILE."
+# Step 4: Save to JSON file
+echo "$SORTED_TOKENS" > "$OUTPUT_FILE"
+
+# Inject a timestamp into the JSON
+CURRENT_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")  # e.g. 2025-10-12T15:20:00Z (UTC)
+TMP_FILE="$(mktemp)"
+
+# `jq` merges the existing array/object with an object containing lastUpdated
+# If top_tokens_with_holders.json is an *array*, wrap with {tokens: .} for the merge
+jq --arg lastUpdated "$CURRENT_DATE" '
+{
+  lastUpdated: $lastUpdated,
+  tokens: .
+}
+' "$OUTPUT_FILE" > "$TMP_FILE"
+
+mv "$TMP_FILE" "$OUTPUT_FILE"
+echo "Top tokens with holders saved to $OUTPUT_FILE with lastUpdated=$CURRENT_DATE."
