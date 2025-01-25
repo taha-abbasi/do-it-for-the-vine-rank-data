@@ -7,7 +7,7 @@ fi
 
 # Constants
 BASE_URL="https://pro-api.solscan.io/v2.0"
-OUTPUT_FILE="/Users/tahaabbasi/Developer/solana/spl/vine-project/public/top_tokens_with_holders.json"
+OUTPUT_FILE="./public/top_tokens_with_holders.json"
 
 # Ensure jq is installed
 if ! command -v jq &>/dev/null; then

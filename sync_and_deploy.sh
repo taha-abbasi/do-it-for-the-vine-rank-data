@@ -8,7 +8,7 @@ set -e  # Exit immediately if a command exits with a non-zero status
 # 1. Run the token update script
 #######################################
 echo "Running fetch_top_tokens_and_holders.sh..."
-/Users/tahaabbasi/Developer/solana/spl/vine-project/fetch_top_tokens_and_holders.sh
+./fetch_top_tokens_and_holders.sh
 
 echo "Fetch script completed. Checking for changes..."
 
