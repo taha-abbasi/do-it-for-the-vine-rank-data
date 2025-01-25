@@ -29,8 +29,8 @@ else
   echo "Committing changes with message: '$COMMIT_MSG'"
   git commit -m "$COMMIT_MSG"
 
-  echo "Pushing to origin data-sync..."
-  git push origin data-sync
+  echo "Pushing to origin feature/data-sync..."
+  git push origin feature/data-sync
 fi
 
 #######################################
@@ -44,5 +44,9 @@ npm run build
 #######################################
 echo "Deploying to Netlify production..."
 netlify deploy --prod
+
+git add .
+git commit -am "post deploy build sync"
+git push origin feature/data-sync
 
 echo "Done!"
