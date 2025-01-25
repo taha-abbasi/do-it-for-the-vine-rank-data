@@ -26,13 +26,13 @@ function QuickSummaryHighlights({
   onRowClick,
 }) {
   return (
-    <Grid container spacing={3} sx={{ marginBottom: 3 }}>
+    <Grid container spacing={3} sx={{ marginBottom: 1 }}>
       {/* Left Column -> Rank by Holders */}
       <Grid item xs={12} md={6}>
         <Box
           sx={{
             // Set total column height
-            height: 372,
+            height: 300,
             display: "flex",
             flexDirection: "column",
           }}
@@ -54,16 +54,7 @@ function QuickSummaryHighlights({
                       Name
                     </TableCell>
                     <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
-                      Symbol
-                    </TableCell>
-                    <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
                       Holders
-                    </TableCell>
-                    <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
-                      Market Cap ($)
-                    </TableCell>
-                    <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
-                      24H Volume ($)
                     </TableCell>
                   </TableRow>
                 </TableHead>
@@ -94,14 +85,7 @@ function QuickSummaryHighlights({
                         )}
                         {token.name}
                       </TableCell>
-                      <TableCell>{token.symbol}</TableCell>
                       <TableCell>{token.holders.toLocaleString()}</TableCell>
-                      <TableCell>
-                        {token.market_cap?.toLocaleString() || "N/A"}
-                      </TableCell>
-                      <TableCell>
-                        {token.volume_24h?.toLocaleString() || "N/A"}
-                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
@@ -115,7 +99,7 @@ function QuickSummaryHighlights({
       <Grid item xs={12} md={6}>
         <Box
           sx={{
-            height: 372,
+            height: 300,
             display: "flex",
             flexDirection: "column",
           }}
@@ -134,15 +118,6 @@ function QuickSummaryHighlights({
                     </TableCell>
                     <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
                       Name
-                    </TableCell>
-                    <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
-                      Symbol
-                    </TableCell>
-                    <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
-                      Holders
-                    </TableCell>
-                    <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
-                      Market Cap ($)
                     </TableCell>
                     <TableCell sx={{ color: "#ffffff", fontWeight: "bold" }}>
                       24H Volume ($)
@@ -175,11 +150,6 @@ function QuickSummaryHighlights({
                           />
                         )}
                         {token.name}
-                      </TableCell>
-                      <TableCell>{token.symbol}</TableCell>
-                      <TableCell>{token.holders.toLocaleString()}</TableCell>
-                      <TableCell>
-                        {token.market_cap?.toLocaleString() || "N/A"}
                       </TableCell>
                       <TableCell>
                         {token.volume_24h?.toLocaleString() || "N/A"}
