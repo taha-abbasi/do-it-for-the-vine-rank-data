@@ -24,6 +24,8 @@ import {
 } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import FilterListIcon from "@mui/icons-material/FilterList";
+import Header from "./Header";
+import Footer from "./Footer";
 
 // Define the theme with Vine colors
 const theme = createTheme({
@@ -214,29 +216,8 @@ export default function VineTable() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      {/* Top AppBar */}
-      <AppBar position="static" style={{ backgroundColor: "#02be8e" }}>
-        <Toolbar>
-          <Box display="flex" alignItems="center" style={{ flexGrow: 1 }}>
-            <img
-              src="/vine_logo_white.svg"
-              alt="Vine Logo"
-              style={{ height: 40, marginRight: 12 }}
-            />
-            <Typography
-              variant="h6"
-              style={{
-                textAlign: "center",
-                flexGrow: 1,
-                fontWeight: "bold",
-                color: "#ffffff",
-              }}
-            >
-              Do it for the Vine
-            </Typography>
-          </Box>
-        </Toolbar>
-      </AppBar>
+      {/* Reusable Header at the top */}
+      <Header />
 
       <Container
         maxWidth="lg"
@@ -261,7 +242,11 @@ export default function VineTable() {
         />
 
         {/* Quick View Table */}
-        <TableContainer component={Paper} elevation={3}>
+        <TableContainer
+          component={Paper}
+          elevation={3}
+          style={{ marginBottom: "1.5rem" }}
+        >
           <Typography variant="h5" style={{ padding: "1rem 0" }}>
             Quick View
           </Typography>
@@ -300,9 +285,7 @@ export default function VineTable() {
                   }}
                 >
                   {/* Quick View rank: displayedTokens-based */}
-                  <TableCell>
-                    {displayedTokens.indexOf(token) + 1}
-                  </TableCell>
+                  <TableCell>{displayedTokens.indexOf(token) + 1}</TableCell>
                   <TableCell>
                     {token.icon && (
                       <img
@@ -338,7 +321,7 @@ export default function VineTable() {
           justifyContent="space-between"
           alignItems="center"
           style={{
-            marginBottom: "1rem",
+            marginBottom: "0rem",
             padding: "0.5rem 1rem",
             backgroundColor: "#f5f5f5",
             borderRadius: "8px",
@@ -376,8 +359,7 @@ export default function VineTable() {
                     style={{ cursor: "pointer", color: "#ffffff" }}
                   >
                     Name{" "}
-                    {sortField === "name" &&
-                      (sortOrder === "asc" ? "↑" : "↓")}
+                    {sortField === "name" && (sortOrder === "asc" ? "↑" : "↓")}
                   </TableCell>
                 )}
                 {columns.symbol && (
@@ -416,8 +398,7 @@ export default function VineTable() {
                     style={{ cursor: "pointer", color: "#ffffff" }}
                   >
                     Price{" "}
-                    {sortField === "price" &&
-                      (sortOrder === "asc" ? "↑" : "↓")}
+                    {sortField === "price" && (sortOrder === "asc" ? "↑" : "↓")}
                   </TableCell>
                 )}
                 {columns.volume_24h && (
@@ -447,9 +428,7 @@ export default function VineTable() {
               {searchTokens.map((token) => (
                 <TableRow key={token.address}>
                   {/* Use displayedTokens.indexOf(token) + 1 for rank in main table */}
-                  <TableCell>
-                    {displayedTokens.indexOf(token) + 1}
-                  </TableCell>
+                  <TableCell>{displayedTokens.indexOf(token) + 1}</TableCell>
                   {columns.name && (
                     <TableCell>
                       {token.icon && (
@@ -477,9 +456,7 @@ export default function VineTable() {
                     </TableCell>
                   )}
                   {columns.price && (
-                    <TableCell>
-                      {token.price?.toFixed(6) || "N/A"}
-                    </TableCell>
+                    <TableCell>{token.price?.toFixed(6) || "N/A"}</TableCell>
                   )}
                   {columns.volume_24h && (
                     <TableCell>
@@ -518,6 +495,7 @@ export default function VineTable() {
           ))}
         </Menu>
       </Container>
+      <Footer />
     </ThemeProvider>
   );
 }
