@@ -154,6 +154,25 @@ export default function Footer() {
             >
               Join Vine Tribe on X
             </Button>
+
+            {/* NEW: Suggest Ideas or Report Issues Section */}
+            <Divider sx={{ marginY: 2 }} />
+
+            <Typography variant="h6" sx={{ fontWeight: "bold", marginBottom: 2 }}>
+              Feedback & Ideas
+            </Typography>
+            <Typography variant="body2" sx={{ marginBottom: 1 }}>
+              Have suggestions or issues? Let us know!
+            </Typography>
+            <Button
+              variant="outlined"
+              color="primary"
+              href="https://github.com/taha-abbasi/do-it-for-the-vine-rank-data/discussions"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open GitHub Discussions
+            </Button>
           </Grid>
         </Grid>
       </Container>
