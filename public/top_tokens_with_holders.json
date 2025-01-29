@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-01-29T04:10:13Z",
+  "lastUpdated": "2025-01-29T04:11:12Z",
   "tokens": [
     {
       "address": "kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6",
@@ -259,7 +259,7 @@
       "symbol": "$WIF",
       "market_cap": 1265063834,
       "price": 1.26,
-      "holders": 210417,
+      "holders": 210437,
       "volume_24h": 1038073498,
       "icon": "https://bafkreibk3covs5ltyqxa272uodhculbr6kea6betidfwy3ajsav2vjzyum.ipfs.nftstorage.link",
       "supply": 998841634303159,
@@ -523,7 +523,7 @@
       "symbol": "ai16z",
       "market_cap": 630803097,
       "price": 0.571217,
-      "holders": 111374,
+      "holders": 111371,
       "volume_24h": 138257193,
       "icon": "https://ipfs.io/ipfs/QmcNTVAoyJ7zDbPnN9jwiMoB8uCoJBUP9RGmmiGGHv44yX",
       "supply": 1099999232710048939,
@@ -694,7 +694,7 @@
       "holders": 93768,
       "volume_24h": 2236544,
       "icon": "https://shdw-drive.genesysgo.net/FDcC9gn12fFkSU2KuQYH4TUjihrZxiTodFRWNF4ns9Kt/250x250_with_padding.png",
-      "supply": 169056503047024458,
+      "supply": 169056503046942962,
       "price_change_24h": -3.58498
     },
     {
@@ -943,7 +943,7 @@
       "symbol": "ZEREBRO",
       "market_cap": 89027383,
       "price": 0.08903,
-      "holders": 72326,
+      "holders": 72325,
       "volume_24h": 20742026,
       "icon": "https://ipfs.io/ipfs/QmZ1HDSibY2LdEmC1tPHK36ApGCQACJENqsbPsT2nc29AD",
       "supply": 999971585331144,
@@ -1051,7 +1051,7 @@
       "symbol": "GRIFFAIN",
       "market_cap": 251955489,
       "price": 0.251371,
-      "holders": 64280,
+      "holders": 64283,
       "volume_24h": 60166042,
       "icon": "https://griffain.com/logo.png",
       "supply": 999872748482098,
@@ -1123,7 +1123,7 @@
       "symbol": "JLP",
       "market_cap": 0,
       "price": 4.67,
-      "holders": 61584,
+      "holders": 61588,
       "volume_24h": 194101135,
       "icon": "https://static.jup.ag/jlp/icon.png",
       "supply": 384467475216850,
