@@ -26,6 +26,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import QuickSummaryHighlights from "./QuickSummaryHighlights";
 import ZoneUpdates from "./ZoneUpdates";
+import DnsRecordUpdates from "./DnsRecordUpdates";
+
 
 // 1) Define the MUI theme with Vine colors
 const theme = createTheme({
@@ -341,7 +343,7 @@ export default function VineTable() {
           Explore the world of Vine Coin and other top tokens.
         </Typography>
 
-        <ZoneUpdates />
+        <DnsRecordUpdates />
 
         {/* Two 3-item mini-tables: left by holders, right by volume */}
         <QuickSummaryHighlights
