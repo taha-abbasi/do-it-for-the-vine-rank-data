@@ -1,21 +1,19 @@
 #!/bin/bash
 # track_dns_records.sh
-# Purpose: Track specific DNS record types for each domain, detect changes, output JSON in public/dns_record_updates.json.
+# Purpose: Track specific DNS record types for each domain, detect changes,
+# store them as a JSON in public/dns_record_updates.json.
+# On first run (no old data), we treat it as "changed": false.
 
 DOMAINS=("twitter.com" "x.com" "vine.co" "vineco.in")
 TYPES=("A" "AAAA" "CNAME" "MX" "TXT" "NS")
 
-# Where to store the previous run data
 OLD_DATA_FILE="dns_records.log"
 TMP_DATA_FILE="dns_records.tmp"
-
-# The JSON output
 OUTPUT_JSON="public/dns_record_updates.json"
 
-# Current date/time in UTC
 DATE_UTC=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
-# Ensure public/ folder exists
+# Ensure we have a public/ directory
 mkdir -p public
 
 # Ensure old data file exists
@@ -23,53 +21,48 @@ mkdir -p public
 
 echo "[$DATE_UTC] Checking DNS records..."
 
-# We'll build up an array of domain objects in JSON
 DOMAIN_JSON_ARRAY=()
 
 for DOMAIN in "${DOMAINS[@]}"; do
-  # We'll keep a subarray of record changes
-  # The final data structure for the domain will be:
-  # {
-  #   "domain": "twitter.com",
-  #   "records": [
-  #       { "type": "A", "old": [ ... ], "current": [ ... ], "changed": true/false },
-  #       ...
-  #   ]
-  # }
-
   RECORD_ARRAY=()
 
   for TYPE in "${TYPES[@]}"; do
-    # Query the DNS
-    # dig +short returns each result line by line
+    # Query the DNS, flatten each line into one space-separated string
     CURRENT_RECORDS=$(dig +short "$DOMAIN" "$TYPE" | sort)
-    # Convert multiline string to a single space-separated line for easier comparison
     CURRENT_ONE_LINE=$(echo "$CURRENT_RECORDS" | tr '\n' ' ')
 
-    # Retrieve old data from $OLD_DATA_FILE
-    # We'll store lines like: "twitter.com A 1.1.1.1 2.2.2.2"
-    # so let's grep for domain+type.
+    # Grab old data from log
     OLD_ENTRY=$(grep "^$DOMAIN $TYPE " "$OLD_DATA_FILE")
-    # The old record set is everything after domain + type, i.e. columns 1+2 are domain+type, the rest is record data
     OLD_RECORDS=$(echo "$OLD_ENTRY" | cut -d' ' -f3-)
 
+    # Decide changed or not
     CHANGED="false"
-    if [[ "$OLD_RECORDS" != "$CURRENT_ONE_LINE" ]]; then
-      CHANGED="true"
-      echo "[$DATE_UTC] $DOMAIN $TYPE changed from '$OLD_RECORDS' to '$CURRENT_ONE_LINE'"
+    if [[ -z "$OLD_RECORDS" ]]; then
+      # No baseline => treat as no change
+      CHANGED="false"
+    else
+      # If new differs from old, changed
+      if [[ "$OLD_RECORDS" != "$CURRENT_ONE_LINE" ]]; then
+        CHANGED="true"
+        echo "[$DATE_UTC] $DOMAIN $TYPE changed from '$OLD_RECORDS' to '$CURRENT_ONE_LINE'"
+      else
+        CHANGED="false"
+      fi
     fi
 
     # Write new line to tmp file for next run
-    # We'll store lines: "twitter.com A 1.1.1.1 2.2.2.2"
     echo "$DOMAIN $TYPE $CURRENT_ONE_LINE" >> "$TMP_DATA_FILE"
 
-    # Build a small JSON object for the record
-    # old => split by spaces if needed (or just store as a single string)
-    # new => same approach
+    # ***** Escape quotes for valid JSON *****
+    # We only store them as a single string, so let's escape internal quotes:
+    ESCAPED_OLD=$(echo "$OLD_RECORDS" | sed 's/"/\\"/g')
+    ESCAPED_CURRENT=$(echo "$CURRENT_ONE_LINE" | sed 's/"/\\"/g')
+
+    # Build record JSON
     RECORD_ARRAY+=("{
       \"type\": \"$TYPE\",
-      \"old\": \"${OLD_RECORDS:-}\" ,
-      \"current\": \"${CURRENT_ONE_LINE:-}\" ,
+      \"old\": \"${ESCAPED_OLD:-}\",
+      \"current\": \"${ESCAPED_CURRENT:-}\",
       \"changed\": $CHANGED
     }")
   done
@@ -82,7 +75,7 @@ for DOMAIN in "${DOMAINS[@]}"; do
   }")
 done
 
-# Move tmp file to old data file
+# Move tmp to old
 mv "$TMP_DATA_FILE" "$OLD_DATA_FILE"
 
 # Build final JSON
