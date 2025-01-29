@@ -1,0 +1,24 @@
+twitter.com A 104.244.42.129 
+twitter.com AAAA  
+twitter.com CNAME  
+twitter.com MX 1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. 
+twitter.com TXT "0a8c0fc6-bfa5-4ea7-b09b-87f2989022d6" "MS=BEE202D20C326867290BDEFA2DDDF4594B5D6860" "adobe-idp-site-verification=a2ff8fc40c434d1d6f02f68b0b1a683e400572ab8c1f2c180c71c3d985b9270a" "apple-domain-verification=zd1iHoEO9LILEQIq" "atlassian-domain-verification=j6u0o1PTkobCXC84uEF/sWpIPtaZURBVYqKzmTvT8wugLcHT1vvrzzA63iP1qSLN" "bj6sbt5xqs9hw9jrfvz7hplrg0l680sb" "canva-site-verification=lMnZ3wMh7c1uqZqa-cxZTg" "google-site-verification=600dQ0pZYsH2xOFt4hYmf5f5NpjCbWE_qk5Y04dErYM" "google-site-verification=TNhAkfLUeIbzzzSgPNxS5aEkKMf3aUcpPmCK1_kmIvU" "google-site-verification=h6dJIv0HXjLOkGAotLAWEzvoi9SxqP4vjpx98vrCvvQ" "loom-site-verification=638c6bc173b9458997f64d305bf42499" "miro-verification=6e1ca9ad6d0c2cd2e4186141265f23ed618cfe37" "mixpanel-domain-verify=164dda91-31f4-41e8-a816-0f59b38fea30" "slack-domain-verification=9oO8P4Glf4252QJDOg4rHGs6KlSkBuI5ZVmWRO8d" "stripe-verification=46F7B88485621DC18923B43D12E90E6CDBCE232F2FEBCF084E6EFA91F6BA707D" "traction-guest=6882b04e-4188-4ff9-8bb4-bff5a3d358e6" "traction-guest=a4d0248d-fe01-4222-8fcc-33f68323e667" "v=spf1 ip4:199.16.156.0/22 ip4:199.59.148.0/22 ip4:8.25.194.0/23 ip4:8.25.196.0/23 ip4:204.92.114.203 ip4:204.92.114.204/31 include:_spf.google.com include:_thirdparty.twitter.com -all" "wrike-verification=MjU4MTA5MjoyN2UzNDc1MjU3MDZiZTY4NjBiNzliNDQ2OTUwNWY3NmM5NDgyMTBlYzFkNTcwYTE2YWNmZDdkNTY2ZmE4Yzlh" 
+twitter.com NS a.r06.twtrdns.net. a.u06.twtrdns.net. b.r06.twtrdns.net. b.u06.twtrdns.net. c.r06.twtrdns.net. c.u06.twtrdns.net. d.r06.twtrdns.net. d.u06.twtrdns.net. 
+x.com A 104.244.42.1 104.244.42.129 104.244.42.193 104.244.42.65 
+x.com AAAA  
+x.com CNAME  
+x.com MX 1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. 
+x.com TXT "3089463" "_w548xs1kfxtlqk3jyx19bzwk34c473i" "adobe-idp-site-verification=ab4d9ce3473a73e81f46238da34ea4967fd5ac80e5c43fbfa8dff46d06a5321c" "adobe-sign-verification=c693a744ee2d282a36a43e6e724c5ea" "apple-domain-verification=sEij6tJOW11fVNrG" "atlassian-domain-verification=j6u0o1PTkobCXC84uEF/sWpIPtaZURBVYqKzmTvT8wugLcHT1vvrzzA63iP1qSLN" "atlassian-sending-domain-verification=bd424180-8645-4de5-bd6a-285479c7577a" "figma-domain-verification=ee8420edd01965ba297f3438c907cfc6fbbaa1ee90a07b28f28bcfca8e6017bb-1729630998" "google-site-verification=8yQmoVhQedzlt36RPeQP41ytrEFk9aHEnde_xm0626g" "google-site-verification=F6u9mGL--d2lbLljvH3b1UUgXtevQPdcamKr9c8914A" "kkdl3qb3tcrmdhfsm803p67r0my0svs8" "shopify-verification-code=cUZazKrqCWgcshrcGvgfFR1lieuhRF" "slack-domain-verification=Csk4bjCPFnJaDLLaKFUwCTFuUpCVvnYlAm2Tba0i" "stripe-verification=46F7B88485621DC18923B43D12E90E6CDBCE232F2FEBCF084E6EFA91F6BA707D" "v=spf1 ip4:199.16.156.128/26 ip4:199.59.150.64/26 include:_spf.google.com include:_spf.salesforce.com include:_oerp.x.com include:phx1.rp.oracleemaildelivery.com include:iad1.rp.oracleemaildelivery.com -all" 
+x.com NS a.r10.twtrdns.net. a.u10.twtrdns.net. b.r10.twtrdns.net. b.u10.twtrdns.net. c.r10.twtrdns.net. c.u10.twtrdns.net. d.r10.twtrdns.net. d.u10.twtrdns.net. 
+vine.co A 52.36.228.37 54.148.86.120 
+vine.co AAAA  
+vine.co CNAME  
+vine.co MX 10 aspmx.l.google.com. 20 alt1.aspmx.l.google.com. 20 alt2.aspmx.l.google.com. 30 aspmx2.googlemail.com. 30 aspmx3.googlemail.com. 
+vine.co TXT "_rfdyhtedqy5qg5y9hggyt1hw6jv92sz" "e1f309c26fa846978a92ccebb75c7833" "szx8zgqr7z21hl52tn15k2crj3jb0zp3" "xvbl4tx5lcwqgq09rr064s5vbmq6l651" 
+vine.co NS ns-1085.awsdns-07.org. ns-2008.awsdns-59.co.uk. ns-326.awsdns-40.com. ns-686.awsdns-21.net. 
+vineco.in A 75.2.70.75 99.83.190.102 
+vineco.in AAAA  
+vineco.in CNAME  
+vineco.in MX 10 mx.hover.com.cust.hostedemail.com. 
+vineco.in TXT  
+vineco.in NS ns1.hover.com. ns2.hover.com. 
