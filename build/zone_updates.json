@@ -1,0 +1,26 @@
+{
+  "lastRun": "2025-01-28 21:17:22",
+  "domains": [
+    {
+          "domain": "twitter.com",
+          "serial": "2024011501",
+          "changed": false,
+          "lastChecked": "2025-01-28 21:17:22"
+        },{
+          "domain": "x.com",
+          "serial": "2023121201",
+          "changed": false,
+          "lastChecked": "2025-01-28 21:17:22"
+        },{
+          "domain": "vine.co",
+          "serial": "1",
+          "changed": false,
+          "lastChecked": "2025-01-28 21:17:22"
+        },{
+          "domain": "vineco.in",
+          "serial": "1737589673",
+          "changed": false,
+          "lastChecked": "2025-01-28 21:17:22"
+        }
+  ]
+}
