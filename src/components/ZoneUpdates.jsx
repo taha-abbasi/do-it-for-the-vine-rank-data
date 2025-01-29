@@ -11,14 +11,62 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  CircularProgress
+  CircularProgress,
 } from "@mui/material";
 
-// No more <Accordion> or <AccordionSummary> or <AccordionDetails>
-// We'll do a plain table.
+/**
+ * Attempts to parse either:
+ *  - An ISO string like "2025-01-28T20:43:22Z"
+ *  - A MySQL-ish string like "2025-01-28 20:43:22"
+ * Returns a JS Date or null if invalid.
+ */
+function parseDateString(dateStr) {
+  if (!dateStr) return null;
+  // If it looks ISO (has 'T'), try new Date() directly
+  if (dateStr.includes("T")) {
+    const parsed = new Date(dateStr);
+    return isNaN(parsed) ? null : parsed;
+  }
 
-function formatUTCDate(isoString) {
-  // your date format code
+  // Else assume "YYYY-MM-DD HH:mm:ss"
+  // e.g. "2025-01-28 20:43:22"
+  const [ymd, hms] = dateStr.split(" ");
+  if (!ymd || !hms) return null;
+  const [year, month, day] = ymd.split("-");
+  const [hour, min, sec] = hms.split(":");
+  // Construct a date in UTC
+  const d = new Date(
+    Date.UTC(
+      Number(year),
+      Number(month) - 1,
+      Number(day),
+      Number(hour),
+      Number(min),
+      Number(sec)
+    )
+  );
+  return isNaN(d) ? null : d;
+}
+
+/**
+ * Format a date/time (ISO or fallback) into "DD-Month-YYYY at HH:mm UTC"
+ * e.g. "28-January-2025 at 20:43 UTC"
+ */
+function formatUTCDate(dateStr) {
+  const dt = parseDateString(dateStr);
+  if (!dt) return "";
+
+  const months = [
+    "January","February","March","April","May","June",
+    "July","August","September","October","November","December"
+  ];
+  const day = dt.getUTCDate(); 
+  const monthName = months[dt.getUTCMonth()];
+  const year = dt.getUTCFullYear();
+  const hh = String(dt.getUTCHours()).padStart(2, "0");
+  const mm = String(dt.getUTCMinutes()).padStart(2, "0");
+
+  return `${day}-${monthName}-${year} at ${hh}:${mm} UTC`;
 }
 
 export default function ZoneUpdates() {

@@ -1,21 +1,61 @@
 // src/components/DnsDetailedPage.jsx
+
 import React from "react";
-import { Container, Typography } from "@mui/material";
+import {
+  CssBaseline,
+  Container,
+  Typography,
+} from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Header from "./Header";
+import Footer from "./Footer";
 import ZoneUpdates from "./ZoneUpdates";
 import DnsRecordUpdates from "./DnsRecordUpdates";
 
+/**
+ * 1) Define the same MUI theme as in VineTable.
+ *    (You can extract this into a shared "theme.js" if desired.)
+ */
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#02be8e",
+    },
+    background: {
+      default: "#ffffff",
+    },
+  },
+  typography: {
+    fontFamily: "Roboto, sans-serif",
+  },
+});
+
 export default function DnsDetailedPage() {
   return (
-    <Container maxWidth="lg" sx={{ paddingY: 4 }}>
-      <Typography variant="h4" sx={{ marginBottom: 2 }}>
-        Detailed DNS Information
-      </Typography>
+    /**
+     * 2) Wrap everything in <ThemeProvider> + <CssBaseline>
+     *    so we get the same color palette and typography as VineTable.
+     */
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
 
-      {/* Show the big zone updates */}
-      <ZoneUpdates />
+      {/* 3) Same Header and Footer layout */}
+      <Header />
 
-      {/* Show the big DNS record updates */}
-      <DnsRecordUpdates />
-    </Container>
+      {/* 4) Main container with your zone + record updates */}
+      <Container maxWidth="lg" sx={{ py: 4, textAlign: "center" }}>
+        <Typography variant="h4" sx={{ mb: 2 }}>
+          Detailed DNS Information
+        </Typography>
+
+        {/* Show the big zone updates */}
+        <ZoneUpdates />
+
+        {/* Show the big DNS record updates */}
+        <DnsRecordUpdates />
+      </Container>
+
+      <Footer />
+    </ThemeProvider>
   );
 }
