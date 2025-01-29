@@ -25,6 +25,7 @@ import FilterListIcon from "@mui/icons-material/FilterList";
 import Header from "./Header";
 import Footer from "./Footer";
 import QuickSummaryHighlights from "./QuickSummaryHighlights";
+import ZoneUpdates from "./ZoneUpdates";
 
 // 1) Define the MUI theme with Vine colors
 const theme = createTheme({
@@ -339,6 +340,8 @@ export default function VineTable() {
         <Typography variant="h3" color="primary" gutterBottom>
           Explore the world of Vine Coin and other top tokens.
         </Typography>
+
+        <ZoneUpdates />
 
         {/* Two 3-item mini-tables: left by holders, right by volume */}
         <QuickSummaryHighlights
