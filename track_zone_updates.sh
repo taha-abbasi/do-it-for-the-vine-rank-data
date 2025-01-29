@@ -13,51 +13,66 @@ OUTPUT_JSON="public/zone_updates.json"
 SOA_FILE="soa_serials.log"
 TMP_FILE="soa_serials.tmp"
 
-# Current date/time
+# Current date/time (in local format or you could do date -u +"%Y-%m-%dT%H:%M:%SZ")
 DATE=$(date +"%Y-%m-%d %H:%M:%S")
 
 # Ensure we have a public/ directory (in case this script is run from root)
 mkdir -p public
 
 # If the serial log file doesn't exist, create it
-if [[ ! -f $SOA_FILE ]]; then
-    touch $SOA_FILE
+if [[ ! -f "$SOA_FILE" ]]; then
+    touch "$SOA_FILE"
 fi
 
 echo "[$DATE] Checking SOA serials..."
 
 # We'll keep an array of JSON domain objects
-# We'll construct it in bash, then pass to jq for safer JSON building
 DOMAIN_JSON_ARRAY=()
 
 for DOMAIN in "${DOMAINS[@]}"; do
-    SERIAL=$(dig +short $DOMAIN SOA | awk '{print $3}')
+
+    # 1) Attempt to retrieve the current serial via dig
+    #    dig +short domain.com SOA => "ns server <serial> <otherstuff>"
+    #    we only want the serial => the 3rd field
+    SOA_OUTPUT=$(dig +short "$DOMAIN" SOA)
+    SERIAL=$(echo "$SOA_OUTPUT" | awk '{print $3}')
 
     if [[ -n "$SERIAL" ]]; then
-        LAST_ENTRY=$(grep "^$DOMAIN" $SOA_FILE)
-        LAST_SERIAL=$(echo "$LAST_ENTRY" | awk '{print $2}')
-        LAST_DATE=$(echo "$LAST_ENTRY" | awk '{print $3, $4}')
+        # 2) Retrieve old data from $SOA_FILE
+        #    Lines might look like: "domain.com 2023121201 2025-01-28 02:41:22"
+        LAST_ENTRY=$(grep "^$DOMAIN " "$SOA_FILE")
 
+        # If we found an entry, parse out old serial
+        LAST_SERIAL=$(echo "$LAST_ENTRY" | awk '{print $2}')
+        # (We do have a "last check date" in columns 3,4, but we won't use it here)
+
+        # Default changed = false
         CHANGED="false"
-        if [[ "$LAST_SERIAL" != "$SERIAL" ]]; then
-            CHANGED="true"
-            echo "[$DATE] Change detected for $DOMAIN: $LAST_SERIAL -> $SERIAL"
+
+        # Only set changed=true if we had old data AND the serial is different
+        if [[ -n "$LAST_SERIAL" ]]; then
+            if [[ "$LAST_SERIAL" != "$SERIAL" ]]; then
+                CHANGED="true"
+                echo "[$DATE] Change detected for $DOMAIN: $LAST_SERIAL -> $SERIAL"
+            fi
         fi
 
-        # Write new line in tmp file for next run
-        echo "$DOMAIN $SERIAL $DATE" >> $TMP_FILE
+        # 3) Write new line in tmp file for next run
+        echo "$DOMAIN $SERIAL $DATE" >> "$TMP_FILE"
 
-        # Build a small domain object
-        # We'll store domain, current serial, last check date (this run), changed?
+        # 4) Build a small domain object for JSON
+        #    store domain, serial, changed, lastChecked
         DOMAIN_JSON_ARRAY+=("{
           \"domain\": \"$DOMAIN\",
           \"serial\": \"$SERIAL\",
           \"changed\": $CHANGED,
           \"lastChecked\": \"$DATE\"
         }")
+
     else
-        # Could not retrieve
-        echo "$DOMAIN ERROR: Could not retrieve SOA record" >> $TMP_FILE
+        # Could not retrieve the SOA record => mark error
+        echo "$DOMAIN ERROR: Could not retrieve SOA record" >> "$TMP_FILE"
+
         DOMAIN_JSON_ARRAY+=("{
           \"domain\": \"$DOMAIN\",
           \"serial\": null,
@@ -66,19 +81,17 @@ for DOMAIN in "${DOMAINS[@]}"; do
           \"error\": \"Could not retrieve SOA\"
         }")
     fi
+
 done
 
-# Replace the old file with the new one
-mv $TMP_FILE $SOA_FILE
+# 5) Replace the old file with the new one
+mv "$TMP_FILE" "$SOA_FILE"
 
-# Now produce the final JSON
-# We'll pass the array to jq to build a proper JSON structure
-# Something like: { "lastRun": "2025-01-28 03:41:50", "domains": [ {...}, {...} ] }
-
-# Convert array items to a comma-separated list
+# 6) Produce final JSON
+# We'll simply build it with a Bash variable for the array
 DOMAIN_JSON_LIST=$(IFS=,; echo "${DOMAIN_JSON_ARRAY[*]}")
 
-cat <<EOF > $OUTPUT_JSON
+cat <<EOF > "$OUTPUT_JSON"
 {
   "lastRun": "$DATE",
   "domains": [
