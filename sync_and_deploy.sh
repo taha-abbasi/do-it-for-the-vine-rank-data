@@ -2,12 +2,9 @@
 # sync_and_deploy.sh
 # Purpose: Update token data, commit changes, push to data-sync branch, then build & deploy to Netlify.
 
-set -e  # Exit immediately if a command exits with a non-zero status
-echo pwd
-# Move into the directory containing this script so relative paths work
-cd "$(dirname "$0")"
+set -e  # Exit immediately if a command fails
 
-echo pwd
+cd "$(dirname "$0")"
 
 #######################################
 # 1. Run the token update script
@@ -15,19 +12,25 @@ echo pwd
 echo "Running fetch_top_tokens_and_holders.sh..."
 ./fetch_top_tokens_and_holders.sh
 
-echo "Fetch script completed. Checking for changes..."
+echo "Fetch script completed."
 
 #######################################
-# 2. Check if the JSON file changed and commit/push if so
+# 2. Run the DNS zone check script
 #######################################
-# Stage any changes (especially public/top_tokens_with_holders.json)
-git add public/top_tokens_with_holders.json
+echo "Running track_zone_updates.sh..."
+./track_zone_updates.sh
 
-# If no changes are staged, we skip the commit/push steps
+echo "Zone check completed."
+
+#######################################
+# 3. Check if there are changes to commit/push
+#######################################
+# Stage any changes (especially public/top_tokens_with_holders.json and public/zone_updates.json)
+git add public/top_tokens_with_holders.json public/zone_updates.json
+
 if git diff --cached --quiet; then
   echo "No changes to commit. Proceeding to build and deploy."
 else
-  # We have changes, so commit and push
   CURRENT_DATE=$(date -u "+%d-%B-%Y %H:%M UTC")
   COMMIT_MSG="Vine Rank Sync $CURRENT_DATE"
 
@@ -39,17 +42,18 @@ else
 fi
 
 #######################################
-# 3. Build the app
+# 4. Build the app
 #######################################
 echo "Building the production bundle (npm run build)..."
 npm run build
 
 #######################################
-# 4. Deploy to Netlify production
+# 5. Deploy to Netlify production
 #######################################
 echo "Deploying to Netlify production..."
 netlify deploy --prod
 
+# Optional: commit build artifacts post-deploy
 git add .
 git commit -am "post deploy build sync"
 git push origin feature/data-sync
