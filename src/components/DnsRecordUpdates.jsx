@@ -22,8 +22,8 @@ function formatUTCDate(isoString) {
   const day = date.getUTCDate();
   const monthIndex = date.getUTCMonth();
   const year = date.getUTCFullYear();
-  const hours = String(date.getUTCHours()).padStart(2, "0");
-  const minutes = String(date.getUTCMinutes()).padStart(2, "0");
+  const hours = String(date.getUTCHours()).padStart(2,"0");
+  const minutes = String(date.getUTCMinutes()).padStart(2,"0");
   const monthName = months[monthIndex];
   return `${day}-${monthName}-${year} at ${hours}:${minutes} UTC`;
 }
@@ -54,7 +54,7 @@ export default function DnsRecordUpdates() {
 
   if (loading) {
     return (
-      <Box sx={{ marginBottom: "1rem", textAlign: "center" }}>
+      <Box sx={{ mb: 1, textAlign: "center" }}>
         <Typography variant="h5" sx={{ fontWeight: "bold" }}>
           DNS Record Updates
         </Typography>
@@ -65,7 +65,7 @@ export default function DnsRecordUpdates() {
 
   if (error) {
     return (
-      <Box sx={{ marginBottom: "1rem", textAlign: "center" }}>
+      <Box sx={{ mb: 1, textAlign: "center" }}>
         <Typography variant="h5" sx={{ fontWeight: "bold" }}>
           DNS Record Updates
         </Typography>
@@ -80,8 +80,7 @@ export default function DnsRecordUpdates() {
   const formattedLastRun = formatUTCDate(lastRun);
 
   return (
-    <Box sx={{ marginBottom: "2rem", textAlign: "left" }}>
-      {/* Title / Last Scan */}
+    <Box sx={{ mb: 2, textAlign: "left" }}>
       <Typography variant="h5" sx={{ fontWeight: "bold", mb: 1 }}>
         DNS Record Updates
       </Typography>
@@ -89,14 +88,29 @@ export default function DnsRecordUpdates() {
         Last Scan: {formattedLastRun}
       </Typography>
 
-      {/* For each domain, show a sub-table */}
       {domains.map((domainObj) => (
-        <Box key={domainObj.domain} sx={{ marginBottom: "1.5rem" }}>
+        <Box key={domainObj.domain} sx={{ mb: 3 }}>
           <Typography variant="subtitle1" sx={{ fontWeight: "bold", color: "#333" }}>
             {domainObj.domain}
           </Typography>
-          <TableContainer component={Paper} sx={{ maxHeight: 350, marginTop: 1 }}>
-            <Table stickyHeader>
+
+          <TableContainer
+            component={Paper}
+            sx={{
+              mt: 1,
+              // Optionally set a maxWidth or horizontal scroll:
+              // maxWidth: 900,
+              // overflowX: "auto",
+            }}
+          >
+            <Table
+              stickyHeader
+              sx={{
+                // Force fixed layout so widths are respected
+                tableLayout: "fixed",
+                width: "100%",
+              }}
+            >
               <TableHead>
                 <TableRow
                   sx={{
@@ -107,11 +121,46 @@ export default function DnsRecordUpdates() {
                     },
                   }}
                 >
-                  {/* Fix column widths here */}
-                  <TableCell sx={{ width: "10%" }}>Type</TableCell>
-                  <TableCell sx={{ width: "35%" }}>Old</TableCell>
-                  <TableCell sx={{ width: "35%" }}>Current</TableCell>
-                  <TableCell sx={{ width: "20%" }}>Changed?</TableCell>
+                  {/* We allocate 10% to Type, 35% to Old, 35% to Current, 20% to Changed? */}
+                  <TableCell
+                    sx={{
+                      width: "10%",
+                      whiteSpace: "normal",
+                      wordBreak: "break-word",
+                    }}
+                  >
+                    Type
+                  </TableCell>
+
+                  <TableCell
+                    sx={{
+                      width: "35%",
+                      whiteSpace: "normal",
+                      wordBreak: "break-word",
+                    }}
+                  >
+                    Old
+                  </TableCell>
+
+                  <TableCell
+                    sx={{
+                      width: "35%",
+                      whiteSpace: "normal",
+                      wordBreak: "break-word",
+                    }}
+                  >
+                    Current
+                  </TableCell>
+
+                  <TableCell
+                    sx={{
+                      width: "20%",
+                      whiteSpace: "normal",
+                      wordBreak: "break-word",
+                    }}
+                  >
+                    Changed?
+                  </TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -121,18 +170,29 @@ export default function DnsRecordUpdates() {
                   return (
                     <TableRow key={`${domainObj.domain}-${rec.type}-${idx}`}>
                       <TableCell>{rec.type}</TableCell>
-                      <TableCell>
+
+                      {/* OLD data, split lines or show N/A */}
+                      <TableCell
+                        sx={{ whiteSpace: "normal", wordBreak: "break-word" }}
+                      >
                         {oldTrimmed
-                          ? oldTrimmed.split(/\s+/).map((item, i) => <div key={i}>{item}</div>)
-                          : <i>N/A</i>
-                        }
+                          ? oldTrimmed.split(/\s+/).map((item, i) => (
+                              <div key={i}>{item}</div>
+                            ))
+                          : <i>N/A</i>}
                       </TableCell>
-                      <TableCell>
+
+                      {/* CURRENT data */}
+                      <TableCell
+                        sx={{ whiteSpace: "normal", wordBreak: "break-word" }}
+                      >
                         {currentTrimmed
-                          ? currentTrimmed.split(/\s+/).map((item, i) => <div key={i}>{item}</div>)
-                          : <i>N/A</i>
-                        }
+                          ? currentTrimmed.split(/\s+/).map((item, i) => (
+                              <div key={i}>{item}</div>
+                            ))
+                          : <i>N/A</i>}
                       </TableCell>
+
                       <TableCell>{rec.changed ? "Yes" : "No"}</TableCell>
                     </TableRow>
                   );
