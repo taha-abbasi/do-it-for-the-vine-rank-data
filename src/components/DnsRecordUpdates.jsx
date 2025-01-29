@@ -1,4 +1,3 @@
-// src/components/DnsRecordUpdates.jsx
 import React, { useEffect, useState } from "react";
 import {
   Box,
@@ -13,7 +12,7 @@ import {
   CircularProgress,
   Accordion,
   AccordionSummary,
-  AccordionDetails
+  AccordionDetails,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -21,7 +20,6 @@ function formatUTCDate(isoString) {
   if (!isoString) return "";
   const date = new Date(isoString);
 
-  // e.g. "25-January-2025 at 13:05 UTC"
   const months = [
     "January","February","March","April","May","June",
     "July","August","September","October","November","December"
@@ -29,8 +27,8 @@ function formatUTCDate(isoString) {
   const day = date.getUTCDate();
   const monthIndex = date.getUTCMonth();
   const year = date.getUTCFullYear();
-  const hours = String(date.getUTCHours()).padStart(2,"0");
-  const minutes = String(date.getUTCMinutes()).padStart(2,"0");
+  const hours = String(date.getUTCHours()).padStart(2, "0");
+  const minutes = String(date.getUTCMinutes()).padStart(2, "0");
   const monthName = months[monthIndex];
   return `${day}-${monthName}-${year} at ${hours}:${minutes} UTC`;
 }
@@ -41,7 +39,6 @@ export default function DnsRecordUpdates() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // The script writes "public/dns_record_updates.json"
     fetch("/dns_record_updates.json")
       .then((res) => {
         if (!res.ok) {
@@ -108,11 +105,17 @@ export default function DnsRecordUpdates() {
           {domains.map((domainObj) => {
             return (
               <Box key={domainObj.domain} sx={{ marginBottom: "1.5rem" }}>
-                <Typography variant="subtitle1" sx={{ fontWeight: "bold", color: "#333" }}>
+                <Typography
+                  variant="subtitle1"
+                  sx={{ fontWeight: "bold", color: "#333" }}
+                >
                   {domainObj.domain}
                 </Typography>
 
-                <TableContainer component={Paper} sx={{ maxHeight: 300, marginTop: 1 }}>
+                <TableContainer
+                  component={Paper}
+                  sx={{ maxHeight: 300, marginTop: 1 }}
+                >
                   <Table stickyHeader>
                     <TableHead>
                       <TableRow
@@ -125,22 +128,43 @@ export default function DnsRecordUpdates() {
                         }}
                       >
                         <TableCell>Type</TableCell>
-                        <TableCell>Old</TableCell>
-                        <TableCell>Current</TableCell>
+                        <TableCell>Old Records</TableCell>
+                        <TableCell>Current Records</TableCell>
                         <TableCell>Changed?</TableCell>
                       </TableRow>
                     </TableHead>
                     <TableBody>
-                      {domainObj.records.map((rec) => {
+                      {domainObj.records.map((rec, idx) => {
                         return (
-                          <TableRow key={rec.type}>
+                          <TableRow key={`${rec.type}-${idx}`}>
                             <TableCell>{rec.type}</TableCell>
-                            <TableCell sx={{ wordBreak: "break-word", maxWidth: 200 }}>
-                              {rec.old || "N/A"}
+
+                            {/* Old as separate lines */}
+                            <TableCell>
+                              {rec.old.length === 0 ? (
+                                <i>N/A</i>
+                              ) : (
+                                <ul style={{ margin: 0, paddingLeft: "1rem" }}>
+                                  {rec.old.map((item, i) => (
+                                    <li key={i}>{item}</li>
+                                  ))}
+                                </ul>
+                              )}
                             </TableCell>
-                            <TableCell sx={{ wordBreak: "break-word", maxWidth: 200 }}>
-                              {rec.current || "N/A"}
+
+                            {/* Current as separate lines */}
+                            <TableCell>
+                              {rec.current.length === 0 ? (
+                                <i>N/A</i>
+                              ) : (
+                                <ul style={{ margin: 0, paddingLeft: "1rem" }}>
+                                  {rec.current.map((item, i) => (
+                                    <li key={i}>{item}</li>
+                                  ))}
+                                </ul>
+                              )}
                             </TableCell>
+
                             <TableCell>{rec.changed ? "Yes" : "No"}</TableCell>
                           </TableRow>
                         );

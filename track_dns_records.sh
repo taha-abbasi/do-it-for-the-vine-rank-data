@@ -27,18 +27,32 @@ echo "[$DATE_UTC] Checking DNS records..."
 DOMAIN_JSON_ARRAY=()
 
 for DOMAIN in "${DOMAINS[@]}"; do
+  # We'll keep a subarray of record changes
+  # The final data structure for the domain will be:
+  # {
+  #   "domain": "twitter.com",
+  #   "records": [
+  #       { "type": "A", "old": [ ... ], "current": [ ... ], "changed": true/false },
+  #       ...
+  #   ]
+  # }
+
   RECORD_ARRAY=()
 
   for TYPE in "${TYPES[@]}"; do
-    # Query and flatten the new record set
+    # Query the DNS
+    # dig +short returns each result line by line
     CURRENT_RECORDS=$(dig +short "$DOMAIN" "$TYPE" | sort)
+    # Convert multiline string to a single space-separated line for easier comparison
     CURRENT_ONE_LINE=$(echo "$CURRENT_RECORDS" | tr '\n' ' ')
 
-    # Get the old record line from the log
+    # Retrieve old data from $OLD_DATA_FILE
+    # We'll store lines like: "twitter.com A 1.1.1.1 2.2.2.2"
+    # so let's grep for domain+type.
     OLD_ENTRY=$(grep "^$DOMAIN $TYPE " "$OLD_DATA_FILE")
+    # The old record set is everything after domain + type, i.e. columns 1+2 are domain+type, the rest is record data
     OLD_RECORDS=$(echo "$OLD_ENTRY" | cut -d' ' -f3-)
 
-    # Compare
     CHANGED="false"
     if [[ "$OLD_RECORDS" != "$CURRENT_ONE_LINE" ]]; then
       CHANGED="true"
@@ -46,17 +60,16 @@ for DOMAIN in "${DOMAINS[@]}"; do
     fi
 
     # Write new line to tmp file for next run
+    # We'll store lines: "twitter.com A 1.1.1.1 2.2.2.2"
     echo "$DOMAIN $TYPE $CURRENT_ONE_LINE" >> "$TMP_DATA_FILE"
 
-    # ***** Escape internal quotes for valid JSON strings *****
-    ESCAPED_OLD_RECORDS=$(echo "$OLD_RECORDS" | sed 's/"/\\"/g')
-    ESCAPED_CURRENT_ONE_LINE=$(echo "$CURRENT_ONE_LINE" | sed 's/"/\\"/g')
-
-    # Build a small JSON object
+    # Build a small JSON object for the record
+    # old => split by spaces if needed (or just store as a single string)
+    # new => same approach
     RECORD_ARRAY+=("{
       \"type\": \"$TYPE\",
-      \"old\": \"${ESCAPED_OLD_RECORDS:-}\",
-      \"current\": \"${ESCAPED_CURRENT_ONE_LINE:-}\",
+      \"old\": \"${OLD_RECORDS:-}\" ,
+      \"current\": \"${CURRENT_ONE_LINE:-}\" ,
       \"changed\": $CHANGED
     }")
   done
@@ -69,6 +82,7 @@ for DOMAIN in "${DOMAINS[@]}"; do
   }")
 done
 
+# Move tmp file to old data file
 mv "$TMP_DATA_FILE" "$OLD_DATA_FILE"
 
 # Build final JSON
