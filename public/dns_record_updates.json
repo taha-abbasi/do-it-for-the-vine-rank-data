@@ -1,12 +1,12 @@
 {
-  "lastRun": "2025-02-01T03:32:48Z",
+  "lastRun": "2025-02-01T03:42:44Z",
   "domains": [ {
     "domain": "twitter.com",
     "records": [ {
       "type": "A",
       "old": "104.244.42.129 ",
-      "current": "104.244.42.129 ",
-      "changed": false
+      "current": "104.244.42.1 ",
+      "changed": true
     },{
       "type": "AAAA",
       "old": " ",
