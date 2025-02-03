@@ -1,4 +1,4 @@
-twitter.com A 104.244.42.193 
+twitter.com A 104.244.42.1 104.244.42.129 104.244.42.193 104.244.42.65 
 twitter.com AAAA  
 twitter.com CNAME  
 twitter.com MX 1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. 
@@ -20,5 +20,5 @@ vineco.in A 75.2.70.75 99.83.190.102
 vineco.in AAAA  
 vineco.in CNAME  
 vineco.in MX 10 mx.hover.com.cust.hostedemail.com. 
-vineco.in TXT  
+vineco.in TXT "v=spf1 include:_spf.hostedemail.com ~all" 
 vineco.in NS ns1.hover.com. ns2.hover.com. 
