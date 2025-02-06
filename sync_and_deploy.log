@@ -341019,3 +341019,62 @@ Function logs:      https://app.netlify.com/sites/vine-rank/logs/functions
 Edge function Logs: https://app.netlify.com/sites/vine-rank/logs/edge-functions
 Unique deploy URL:  https://67a530285c61636c3ffc4298--vine-rank.netlify.app
 Website URL:        https://doitforthevine.org
+[feature/data-sync b7d3b15] post deploy build sync
+ 6 files changed, 896 insertions(+), 486 deletions(-)
+Fetching metadata for SolCex  (SOLCEX)...
+Fetching metadata for Happy Cat (HAPPY)...
+Fetching metadata for Pepe On Fire (PFIRE)...
+To github.com:taha-abbasi/do-it-for-the-vine-rank-data.git
+   d2defbc..b7d3b15  feature/data-sync -> feature/data-sync
+Done!
+Fetching metadata for Magic Eden (ME)...
+Fetching metadata for THECAT (THECAT)...
+Deploy path:        /Users/tahaabbasi/Developer/solana/spl/vine-project/build
+Functions path:     /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify/functions
+Configuration path: /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify.toml
+Functions folder "/Users/tahaabbasi/Developer/solana/spl/vine-project/netlify/functions" specified but it doesn't exist! Will proceed without deploying functions
+Deploying to main site URL...
+- Uploading blobs to deploy store...
+
+​
+Netlify Build                                                 
+────────────────────────────────────────────────────────────────
+​
+❯ Version
+  @netlify/build 29.58.7
+​
+❯ Flags
+  deployId: 67a5302e84dbcc7613497cc0
+  open: false
+  prod: true
+  prodIfUnlocked: false
+  skipFunctionsCache: false
+​
+❯ Current directory
+  /Users/tahaabbasi/Developer/solana/spl/vine-project
+​
+❯ Config file
+  /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify.toml
+​
+❯ Context
+  dev
+✔ Finished uploading blobs to deploy store
+- Hashing files...
+- Looking for a functions cache...
+✔ No cached functions were found
+Fetching metadata for ai16z (ai16z)...
+✔ Finished hashing 
+- CDN diffing files...
+✔ CDN requesting 0 files
+- Uploading 0 files
+✔ Finished uploading 0 assets
+- Waiting for deploy to go live...
+Fetching metadata for cheepepe (CHEEPEPE)...
+Fetching metadata for Fartcoin  (Fartcoin )...
+✔ Deploy is live!
+
+Build logs:         https://app.netlify.com/sites/vine-rank/deploys/67a5302e84dbcc7613497cc0
+Function logs:      https://app.netlify.com/sites/vine-rank/logs/functions
+Edge function Logs: https://app.netlify.com/sites/vine-rank/logs/edge-functions
+Unique deploy URL:  https://67a5302e84dbcc7613497cc0--vine-rank.netlify.app
+Website URL:        https://doitforthevine.org
