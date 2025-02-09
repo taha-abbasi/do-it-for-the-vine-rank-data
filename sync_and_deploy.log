@@ -423813,3 +423813,524 @@ Function logs:      https://app.netlify.com/sites/vine-rank/logs/functions
 Edge function Logs: https://app.netlify.com/sites/vine-rank/logs/edge-functions
 Unique deploy URL:  https://67a933f89c4abca1b9bfe56d--vine-rank.netlify.app
 Website URL:        https://doitforthevine.org
+[feature/data-sync e1bf61ed] post deploy build sync
+ 6 files changed, 679 insertions(+), 469 deletions(-)
+To github.com:taha-abbasi/do-it-for-the-vine-rank-data.git
+   1dbba325..e1bf61ed  feature/data-sync -> feature/data-sync
+Done!
+Running fetch_top_tokens_and_holders.sh...
+Fetching top 100 tokens...
+Fetching metadata for each token...
+Fetching metadata for KIN (KIN)...
+Fetching metadata for USD Coin (USDC)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Gari (GARI)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for USDT (USDT)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for catwifhat ($CWIF)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Wrapped SOL (SOL)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Jupiter (JUP)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Bonk (Bonk)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for GST (GST)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for OFFICIAL TRUMP (TRUMP)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Pudgy Penguins (PENGU)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Walken (WLKN)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Helium Network Token (HNT)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for GMT (GMT)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Solanium (SLIM)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Grass (GRASS)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Pyth Network (PYTH)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Melania Meme (MELANIA)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Wen (WEN)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Raydium (RAY)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Blaze (BLZE)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for dogwifhat ($WIF)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for FOMO (FOMO)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Helium IOT (IOT)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Access Protocol (ACS)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for cat in a dogs world (MEW)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Nodecoin (NC)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Holdium (HM)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Jito Staked SOL (JitoSOL)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for UPROCK (UPT)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Marinade staked SOL (mSOL) (mSOL)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Star Atlas (ATLAS)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Rizzmas (Rizzmas)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for sealwifhat (SI)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Quiztok Token (Wormhole) (QTCON)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for POPCAT (POPCAT)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Just a chill guy (CHILLGUY)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Vine Coin (VINE)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for SolCex  (SOLCEX)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Happy Cat (HAPPY)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Pepe On Fire (PFIRE)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Magic Eden (ME)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for THECAT (THECAT)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Solayer SOL (sSOL)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for ai16z (ai16z)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for cheepepe (CHEEPEPE)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Fartcoin  (Fartcoin )...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Cloud (CLOUD)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for rexwifhat (REXHAT)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Wormhole Token (W)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for X Community (X)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Stool Prisondente (jailstool)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for IP3 (IP3)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Smog (SMOG)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Helium Mobile (MOBILE)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for SolChicks (CHICKS)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for American Coin (USA)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for ZEUS (ZEUS)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Shadow Token (SHDW)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Samoyed Coin (SAMO)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Grumpy Cat (GRUMPY)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for HONEY (HONEY)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Audius (Wormhole) (AUDIO)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Render Token (RENDER)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Mumu the Bull (MUMU)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for DNA (DNA)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Goatseus Maximus (GOAT)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for IO (IO)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for BOOK OF MEME (BOME)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Sonic Restaked SOL (sonicSOL)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Lamas Finance (LMF)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Orca (ORCA)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for just buy $1 worth of this coin ($1)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Peanut the Squirrel  (Pnut )...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Sharky (SHARK)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for GIGACHAD (GIGA)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Robinhood (HOOD)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for PONKE (PONKE)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for FWOG (FWOG)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for MANEKI (MANEKI)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for zerebro (ZEREBRO)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for DADDY TATE (DADDY)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Solana INU (INU)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for coolcat (COOL)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for IQ50 (IQ50)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for TARS AI (TAI)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Peepo (PEEP)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for test griffain.com (GRIFFAIN)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for DOGGO (DOGGO)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Shroom (SHROOM)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Moo Deng (MOODENG)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Rollbit Coin (RLB)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for BlazeStake Staked SOL (bSOL) (bSOL)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Jupiter Perps LP (JLP)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for JITO (JTO)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Polite Cat (POCAT)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Marinade (MNDE)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for BonkEarn (BERN)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Thief Cat (NAMI)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for BOZO (BOZO)...
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Sorting tokens by holder count...
+Top tokens with holders saved to ./public/top_tokens_with_holders.json with lastUpdated=2025-02-09T23:36:25Z.
+Fetch script completed.
+Running track_zone_updates.sh...
+[2025-02-09 16:36:25] Checking SOA serials...
+[2025-02-09 16:36:25] Change detected for twitter.com: 2024011501 -> timed
+[2025-02-09 16:36:25] Change detected for x.com: 2023179888 -> timed
+[2025-02-09 16:36:25] Change detected for vine.co: 1 -> timed
+[2025-02-09 16:36:25] Change detected for vineco.in: 1738609881 -> timed
+Zone updates saved to public/zone_updates.json
+Zone check completed.
+Running track_dns_records.sh...
+[2025-02-09T23:37:38Z] Checking DNS records...
+[2025-02-09T23:37:38Z] twitter.com A changed from '104.244.42.1 104.244.42.129 104.244.42.193 104.244.42.65 ' to ';; connection timed out; no servers could be reached '
+[2025-02-09T23:37:38Z] twitter.com AAAA changed from ' ' to ';; connection timed out; no servers could be reached '
+[2025-02-09T23:37:38Z] twitter.com CNAME changed from ' ' to ';; connection timed out; no servers could be reached '
+[2025-02-09T23:37:38Z] twitter.com MX changed from '1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ' to ';; connection timed out; no servers could be reached '
+[2025-02-09T23:37:38Z] twitter.com TXT changed from '"0a8c0fc6-bfa5-4ea7-b09b-87f2989022d6" "MS=BEE202D20C326867290BDEFA2DDDF4594B5D6860" "adobe-idp-site-verification=a2ff8fc40c434d1d6f02f68b0b1a683e400572ab8c1f2c180c71c3d985b9270a" "apple-domain-verification=zd1iHoEO9LILEQIq" "atlassian-domain-verification=j6u0o1PTkobCXC84uEF/sWpIPtaZURBVYqKzmTvT8wugLcHT1vvrzzA63iP1qSLN" "bj6sbt5xqs9hw9jrfvz7hplrg0l680sb" "canva-site-verification=lMnZ3wMh7c1uqZqa-cxZTg" "google-site-verification=600dQ0pZYsH2xOFt4hYmf5f5NpjCbWE_qk5Y04dErYM" "google-site-verification=TNhAkfLUeIbzzzSgPNxS5aEkKMf3aUcpPmCK1_kmIvU" "google-site-verification=h6dJIv0HXjLOkGAotLAWEzvoi9SxqP4vjpx98vrCvvQ" "loom-site-verification=638c6bc173b9458997f64d305bf42499" "miro-verification=6e1ca9ad6d0c2cd2e4186141265f23ed618cfe37" "mixpanel-domain-verify=164dda91-31f4-41e8-a816-0f59b38fea30" "slack-domain-verification=9oO8P4Glf4252QJDOg4rHGs6KlSkBuI5ZVmWRO8d" "stripe-verification=46F7B88485621DC18923B43D12E90E6CDBCE232F2FEBCF084E6EFA91F6BA707D" "traction-guest=6882b04e-4188-4ff9-8bb4-bff5a3d358e6" "traction-guest=a4d0248d-fe01-4222-8fcc-33f68323e667" "v=spf1 ip4:199.16.156.0/22 ip4:199.59.148.0/22 ip4:8.25.194.0/23 ip4:8.25.196.0/23 ip4:204.92.114.203 ip4:204.92.114.204/31 include:_spf.google.com include:_thirdparty.twitter.com -all" "wrike-verification=MjU4MTA5MjoyN2UzNDc1MjU3MDZiZTY4NjBiNzliNDQ2OTUwNWY3NmM5NDgyMTBlYzFkNTcwYTE2YWNmZDdkNTY2ZmE4Yzlh" ' to ';; connection timed out; no servers could be reached '
+[2025-02-09T23:37:38Z] twitter.com NS changed from 'a.r06.twtrdns.net. a.u06.twtrdns.net. b.r06.twtrdns.net. b.u06.twtrdns.net. c.r06.twtrdns.net. c.u06.twtrdns.net. d.r06.twtrdns.net. d.u06.twtrdns.net. ' to ';; connection timed out; no servers could be reached '
+[2025-02-09T23:37:38Z] x.com A changed from '104.244.42.1 104.244.42.129 104.244.42.193 104.244.42.65 ' to ';; connection timed out; no servers could be reached '
+Running fetch_top_tokens_and_holders.sh...
+Fetching top 100 tokens...
+Failed to fetch the token list. Exiting.
+[2025-02-09T23:37:38Z] x.com AAAA changed from ' ' to ';; connection timed out; no servers could be reached '
+[2025-02-09T23:37:38Z] x.com CNAME changed from ' ' to ';; connection timed out; no servers could be reached '
+[2025-02-09T23:37:38Z] x.com MX changed from '1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. ' to ';; connection timed out; no servers could be reached '
+DNS record updates written to public/dns_record_updates.json
+DNS record updates completed.
+Committing changes with message: 'Vine Rank Sync 09-February-2025 23:40 UTC'
+[feature/data-sync 09c39461] Vine Rank Sync 09-February-2025 23:40 UTC
+ 3 files changed, 39 insertions(+), 1227 deletions(-)
+Pushing to origin feature/data-sync...
+To github.com:taha-abbasi/do-it-for-the-vine-rank-data.git
+   e1bf61ed..09c39461  feature/data-sync -> feature/data-sync
+Building the production bundle (npm run build)...
+
+> vine-project@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Compiled with warnings.
+
+[eslint] 
+src/components/VineTable.jsx
+  Line 28:8:  'ZoneUpdates' is defined but never used       no-unused-vars
+  Line 29:8:  'DnsRecordUpdates' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  152.03 kB  build/static/js/main.bd5bfc1f.js
+  2.7 kB     build/static/js/488.e51471bb.chunk.js
+  264 B      build/static/css/main.e6c13ad2.css
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+Deploying to Netlify production...
+Deploy path:        /Users/tahaabbasi/Developer/solana/spl/vine-project/build
+Functions path:     /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify/functions
+Configuration path: /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify.toml
+Functions folder "/Users/tahaabbasi/Developer/solana/spl/vine-project/netlify/functions" specified but it doesn't exist! Will proceed without deploying functions
+Deploying to main site URL...
+- Uploading blobs to deploy store...
+
+​
+Netlify Build                                                 
+────────────────────────────────────────────────────────────────
+​
+❯ Version
+  @netlify/build 29.58.7
+​
+❯ Flags
+  deployId: 67a93d18b3b13e6f95033fb6
+  open: false
+  prod: true
+  prodIfUnlocked: false
+  skipFunctionsCache: false
+​
+❯ Current directory
+  /Users/tahaabbasi/Developer/solana/spl/vine-project
+​
+❯ Config file
+  /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify.toml
+​
+❯ Context
+  dev
+✔ Finished uploading blobs to deploy store
+- Hashing files...
+- Looking for a functions cache...
+✔ No cached functions were found
+✔ Finished hashing 
+- CDN diffing files...
+✔ CDN requesting 3 files
+- Uploading 3 files
+✔ Finished uploading 3 assets
+- Waiting for deploy to go live...
+✔ Deploy is live!
+
+Build logs:         https://app.netlify.com/sites/vine-rank/deploys/67a93d18b3b13e6f95033fb6
+Function logs:      https://app.netlify.com/sites/vine-rank/logs/functions
+Edge function Logs: https://app.netlify.com/sites/vine-rank/logs/edge-functions
+Unique deploy URL:  https://67a93d18b3b13e6f95033fb6--vine-rank.netlify.app
+Website URL:        https://doitforthevine.org
