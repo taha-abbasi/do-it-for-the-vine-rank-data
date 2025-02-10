@@ -431491,3 +431491,118 @@ Function logs:      https://app.netlify.com/sites/vine-rank/logs/functions
 Edge function Logs: https://app.netlify.com/sites/vine-rank/logs/edge-functions
 Unique deploy URL:  https://67aa3a2f2d93a629b5b5c13a--vine-rank.netlify.app
 Website URL:        https://doitforthevine.org
+[feature/data-sync 8ae5377e] post deploy build sync
+ 5 files changed, 778 insertions(+), 527 deletions(-)
+To github.com:taha-abbasi/do-it-for-the-vine-rank-data.git
+   62bc32bf..8ae5377e  feature/data-sync -> feature/data-sync
+Done!
+jq: invalid JSON text passed to --argjson
+Use jq --help for help with command-line options,
+or see the jq manpage, or online docs  at https://jqlang.github.io/jq
+Fetching metadata for Polite Cat (POCAT)...
+Fetching metadata for Marinade (MNDE)...
+Fetching metadata for BonkEarn (BERN)...
+Fetching metadata for Thief Cat (NAMI)...
+Fetching metadata for BOZO (BOZO)...
+Sorting tokens by holder count...
+Top tokens with holders saved to ./public/top_tokens_with_holders.json with lastUpdated=2025-02-10T17:41:31Z.
+Fetch script completed.
+Running track_zone_updates.sh...
+[2025-02-10 10:41:31] Checking SOA serials...
+[2025-02-10 10:41:31] Change detected for twitter.com: 2024011501 -> 2024070480
+[2025-02-10 10:41:31] Change detected for x.com: 2023121201 -> 2023180143
+Zone updates saved to public/zone_updates.json
+Zone check completed.
+Running track_dns_records.sh...
+[2025-02-10T17:41:31Z] Checking DNS records...
+[2025-02-10T17:41:31Z] twitter.com MX changed from '1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ' to '1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. '
+DNS record updates written to public/dns_record_updates.json
+DNS record updates completed.
+Committing changes with message: 'Vine Rank Sync 10-February-2025 17:46 UTC'
+[feature/data-sync ad20685f] Vine Rank Sync 10-February-2025 17:46 UTC
+ 3 files changed, 419 insertions(+), 419 deletions(-)
+Pushing to origin feature/data-sync...
+To github.com:taha-abbasi/do-it-for-the-vine-rank-data.git
+   8ae5377e..ad20685f  feature/data-sync -> feature/data-sync
+Building the production bundle (npm run build)...
+
+> vine-project@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Compiled with warnings.
+
+[eslint] 
+src/components/VineTable.jsx
+  Line 28:8:  'ZoneUpdates' is defined but never used       no-unused-vars
+  Line 29:8:  'DnsRecordUpdates' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  152.03 kB  build/static/js/main.bd5bfc1f.js
+  2.7 kB     build/static/js/488.e51471bb.chunk.js
+  264 B      build/static/css/main.e6c13ad2.css
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+Deploying to Netlify production...
+Deploy path:        /Users/tahaabbasi/Developer/solana/spl/vine-project/build
+Functions path:     /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify/functions
+Configuration path: /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify.toml
+Functions folder "/Users/tahaabbasi/Developer/solana/spl/vine-project/netlify/functions" specified but it doesn't exist! Will proceed without deploying functions
+Deploying to main site URL...
+- Uploading blobs to deploy store...
+
+​
+Netlify Build                                                 
+────────────────────────────────────────────────────────────────
+​
+❯ Version
+  @netlify/build 29.58.7
+​
+❯ Flags
+  deployId: 67aa3b8d2d93a62beab5c16f
+  open: false
+  prod: true
+  prodIfUnlocked: false
+  skipFunctionsCache: false
+​
+❯ Current directory
+  /Users/tahaabbasi/Developer/solana/spl/vine-project
+​
+❯ Config file
+  /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify.toml
+​
+❯ Context
+  dev
+✔ Finished uploading blobs to deploy store
+- Hashing files...
+- Looking for a functions cache...
+✔ No cached functions were found
+✔ Finished hashing 
+- CDN diffing files...
+✔ CDN requesting 3 files
+- Uploading 3 files
+✔ Finished uploading 3 assets
+- Waiting for deploy to go live...
+✔ Deploy is live!
+
+Build logs:         https://app.netlify.com/sites/vine-rank/deploys/67aa3b8d2d93a62beab5c16f
+Function logs:      https://app.netlify.com/sites/vine-rank/logs/functions
+Edge function Logs: https://app.netlify.com/sites/vine-rank/logs/edge-functions
+Unique deploy URL:  https://67aa3b8d2d93a62beab5c16f--vine-rank.netlify.app
+Website URL:        https://doitforthevine.org
