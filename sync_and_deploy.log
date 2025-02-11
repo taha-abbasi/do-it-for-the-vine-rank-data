@@ -441387,3 +441387,51 @@ Function logs:      https://app.netlify.com/sites/vine-rank/logs/functions
 Edge function Logs: https://app.netlify.com/sites/vine-rank/logs/edge-functions
 Unique deploy URL:  https://67aaafccf0fec0add8699077--vine-rank.netlify.app
 Website URL:        https://doitforthevine.org
+[feature/data-sync e9009d01] post deploy build sync
+ 6 files changed, 892 insertions(+), 503 deletions(-)
+Deploy path:        /Users/tahaabbasi/Developer/solana/spl/vine-project/build
+Functions path:     /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify/functions
+Configuration path: /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify.toml
+Functions folder "/Users/tahaabbasi/Developer/solana/spl/vine-project/netlify/functions" specified but it doesn't exist! Will proceed without deploying functions
+Deploying to main site URL...
+- Uploading blobs to deploy store...
+
+​
+Netlify Build                                                 
+────────────────────────────────────────────────────────────────
+​
+❯ Version
+  @netlify/build 29.58.7
+​
+❯ Flags
+  deployId: 67aaafcfa74b40bba923c672
+  open: false
+  prod: true
+  prodIfUnlocked: false
+  skipFunctionsCache: false
+​
+❯ Current directory
+  /Users/tahaabbasi/Developer/solana/spl/vine-project
+​
+❯ Config file
+  /Users/tahaabbasi/Developer/solana/spl/vine-project/netlify.toml
+​
+❯ Context
+  dev
+✔ Finished uploading blobs to deploy store
+- Hashing files...
+- Looking for a functions cache...
+✔ No cached functions were found
+✔ Finished hashing 
+- CDN diffing files...
+✔ CDN requesting 0 files
+- Uploading 0 files
+✔ Finished uploading 0 assets
+- Waiting for deploy to go live...
+✔ Deploy is live!
+
+Build logs:         https://app.netlify.com/sites/vine-rank/deploys/67aaafcfa74b40bba923c672
+Function logs:      https://app.netlify.com/sites/vine-rank/logs/functions
+Edge function Logs: https://app.netlify.com/sites/vine-rank/logs/edge-functions
+Unique deploy URL:  https://67aaafcfa74b40bba923c672--vine-rank.netlify.app
+Website URL:        https://doitforthevine.org
