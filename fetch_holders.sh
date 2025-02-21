@@ -14,6 +14,7 @@ FAILED_PAGES="failed_pages.log"
 # Clear previous data
 > "$OUTPUT_FILE"
 > "$FAILED_PAGES"
+> "processed_pages.log"
 
 # Step 1: Fetch Total Holder Count from `/token/meta`
 echo "Fetching total holder count..."
@@ -33,7 +34,7 @@ echo "Total holders: $TOTAL_COUNT (Last Page: $LAST_PAGE)"
 fetch_page() {
     PAGE=$1
     echo "Fetching page $PAGE..."
-
+    
     RESPONSE=$(curl -s -X GET "$API_URL_HOLDERS?address=$TOKEN_ADDRESS&page=$PAGE&page_size=$PAGE_SIZE" \
         -H "content-Type: application/json" \
         -H "token: $API_KEY")
@@ -62,9 +63,11 @@ fetch_page() {
             HUMAN_BALANCE=$(awk -v raw="$RAW_BALANCE" -v dec="$DECIMALS" 'BEGIN { printf "%.6f", raw / dec }')
             echo "$ADDRESS|$HUMAN_BALANCE" >> "$OUTPUT_FILE"
         else
-            echo "Skipping invalid balance entry: $ADDRESS $RAW_BALANCE"
+            echo "Skipping invalid balance entry: $ADDRESS $RAW_BALANCE" >> "skipped_entries.log"
         fi
     done <<< "$HOLDERS"
+
+    echo "$PAGE" >> "processed_pages.log"
 }
 
 export -f fetch_page
