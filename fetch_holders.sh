@@ -94,8 +94,13 @@ done
 echo "Sorting data..."
 sort -t '|' -k2 -nr "$OUTPUT_FILE" -o "$OUTPUT_FILE"
 
-# Step 5: Count holders with balance < 35 VINE
-SMALL_HOLDERS_COUNT=$(awk -F '|' '$2 < 35' "$OUTPUT_FILE" | wc -l)
-echo "Number of holders with less than 35 VINE: $SMALL_HOLDERS_COUNT"
+# Step 5: Count holders with different balance thresholds
+LESS_THAN_1_VINE=$(awk -F '|' '$2 < 1' "$OUTPUT_FILE" | wc -l)
+LESS_THAN_10_VINE=$(awk -F '|' '$2 < 10' "$OUTPUT_FILE" | wc -l)
+LESS_THAN_35_VINE=$(awk -F '|' '$2 < 35' "$OUTPUT_FILE" | wc -l)
+
+echo "Number of holders with less than 1 VINE: $LESS_THAN_1_VINE"
+echo "Number of holders with less than 10 VINE: $LESS_THAN_10_VINE"
+echo "Number of holders with less than 35 VINE: $LESS_THAN_35_VINE"
 
 echo "Data saved to $OUTPUT_FILE"
