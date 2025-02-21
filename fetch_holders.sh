@@ -6,11 +6,14 @@ TOKEN_ADDRESS="6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump"
 API_URL="https://pro-api.solscan.io/v2.0/token/holders"
 PAGE_SIZE=40  # API supports max 40
 OUTPUT_FILE="holders.txt"
+DECIMALS=1000000  # 6 decimal places
 
 # Clear previous data
 > "$OUTPUT_FILE"
 
 PAGE=1
+TOTAL_HOLDERS=0
+
 while :; do
     echo "Fetching page $PAGE..."
 
@@ -24,33 +27,32 @@ while :; do
         exit 1
     fi
 
-    # Check if 'data.items' exists
-    if ! echo "$RESPONSE" | jq -e '.data.items' > /dev/null; then
-        echo "No more data found. Exiting."
-        break
-    fi
+    # Extract holders
+    HOLDERS=$(echo "$RESPONSE" | jq -r '.data.items[]? | "\(.address) \(.amount)"')
 
-    # Extract holders (address|balance)
-    HOLDERS=$(echo "$RESPONSE" | jq -r '.data.items[]? | "\(.address)|\(.amount)"')
-
-    # If no holders are found, exit the loop
+    # Stop if no more holders
     if [ -z "$HOLDERS" ]; then
         echo "No more holders found. Exiting loop."
         break
     fi
 
-    # Append holders to file
-    echo "$HOLDERS" >> "$OUTPUT_FILE"
+    # Convert raw balances to readable balances
+    while read -r ADDRESS RAW_BALANCE; do
+        HUMAN_BALANCE=$(awk "BEGIN {printf \"%.6f\", $RAW_BALANCE / $DECIMALS}")
+        echo "$ADDRESS|$HUMAN_BALANCE" >> "$OUTPUT_FILE"
+        ((TOTAL_HOLDERS++))
+    done <<< "$HOLDERS"
 
     ((PAGE++))
-    sleep 1  # Avoid hitting API rate limits
+    sleep 1  # Avoid API rate limits
 done
 
+echo "Total holders fetched: $TOTAL_HOLDERS"
 echo "Sorting data..."
 sort -t '|' -k2 -nr "$OUTPUT_FILE" -o "$OUTPUT_FILE"
 
-# Count holders with balance < 35 tokens
+# Count holders with balance < 35 VINE
 SMALL_HOLDERS_COUNT=$(awk -F '|' '$2 < 35' "$OUTPUT_FILE" | wc -l)
-echo "Number of holders with less than 35 tokens: $SMALL_HOLDERS_COUNT"
+echo "Number of holders with less than 35 VINE: $SMALL_HOLDERS_COUNT"
 
 echo "Data saved to $OUTPUT_FILE"
