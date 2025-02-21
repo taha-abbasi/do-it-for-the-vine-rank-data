@@ -5,10 +5,10 @@ API_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkQXQiOjE3Mzc4MTQ3MDA0Mz
 TOKEN_ADDRESS="6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump"
 API_URL_HOLDERS="https://pro-api.solscan.io/v2.0/token/holders"
 API_URL_META="https://pro-api.solscan.io/v2.0/token/meta"
-PAGE_SIZE=40  # Maximum per request
+PAGE_SIZE=40
 OUTPUT_FILE="holders.txt"
 DECIMALS=1000000  # 6 decimal places
-CONCURRENT_REQUESTS=10  # Parallel API calls
+CONCURRENT_REQUESTS=5  # Lower concurrency to avoid API rate limits
 FAILED_PAGES="failed_pages.log"
 
 # Clear previous data
@@ -34,7 +34,7 @@ echo "Total holders: $TOTAL_COUNT (Last Page: $LAST_PAGE)"
 fetch_page() {
     PAGE=$1
     echo "Fetching page $PAGE..."
-    
+
     RESPONSE=$(curl -s -X GET "$API_URL_HOLDERS?address=$TOKEN_ADDRESS&page=$PAGE&page_size=$PAGE_SIZE" \
         -H "content-Type: application/json" \
         -H "token: $API_KEY")
@@ -47,14 +47,15 @@ fetch_page() {
     fi
 
     # Extract holders (address & balance)
-    HOLDERS=$(echo "$RESPONSE" | jq -r '.data.items[]? | "\(.address) \(.amount)"')
-
-    # If the API returned no data, log the failed page
-    if [ -z "$HOLDERS" ]; then
-        echo "Page $PAGE returned no data, retrying later..."
+    ITEMS_COUNT=$(echo "$RESPONSE" | jq '.data.items | length')
+    
+    if [[ "$ITEMS_COUNT" -eq 0 ]]; then
+        echo "Page $PAGE returned no data, marking for re-fetch..."
         echo "$PAGE" >> "$FAILED_PAGES"
         return
     fi
+
+    HOLDERS=$(echo "$RESPONSE" | jq -r '.data.items[]? | "\(.address) \(.amount)"')
 
     # Convert balances to human-readable format
     while read -r ADDRESS RAW_BALANCE; do
@@ -77,11 +78,18 @@ export API_URL_HOLDERS TOKEN_ADDRESS API_KEY PAGE_SIZE DECIMALS OUTPUT_FILE
 echo "Fetching all holders in parallel..."
 seq 1 "$LAST_PAGE" | xargs -n1 -P"$CONCURRENT_REQUESTS" bash -c 'fetch_page "$@"' _
 
-# Step 4: Retry Failed Pages
-if [[ -s "$FAILED_PAGES" ]]; then
-    echo "Retrying failed pages..."
-    cat "$FAILED_PAGES" | xargs -n1 -P1 bash -c 'fetch_page "$@"' _
-fi
+# Step 4: Retry Failed Pages (up to 3 times)
+for i in {1..3}; do
+    if [[ -s "$FAILED_PAGES" ]]; then
+        echo "Retrying failed pages (Attempt $i)..."
+        cat "$FAILED_PAGES" > "retry_list.log"
+        > "$FAILED_PAGES"
+        cat "retry_list.log" | xargs -n1 -P1 bash -c 'fetch_page "$@"' _
+        sleep 5  # Add a short delay between retries
+    else
+        break
+    fi
+done
 
 echo "Sorting data..."
 sort -t '|' -k2 -nr "$OUTPUT_FILE" -o "$OUTPUT_FILE"
