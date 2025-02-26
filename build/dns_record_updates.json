@@ -1,5 +1,5 @@
 {
-  "lastRun": "2025-02-26T01:31:30Z",
+  "lastRun": "2025-02-26T01:41:57Z",
   "domains": [ {
     "domain": "twitter.com",
     "records": [ {
@@ -52,8 +52,8 @@
       "changed": false
     },{
       "type": "MX",
-      "old": "1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ",
-      "current": "1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. ",
+      "old": "1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. ",
+      "current": "1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ",
       "changed": true
     },{
       "type": "TXT",
@@ -70,9 +70,9 @@
     "domain": "vine.co",
     "records": [ {
       "type": "A",
-      "old": "34.211.170.157 54.149.205.40 ",
+      "old": "34.211.170.157 35.166.244.225 ",
       "current": "34.211.170.157 35.166.244.225 ",
-      "changed": true
+      "changed": false
     },{
       "type": "AAAA",
       "old": " ",
