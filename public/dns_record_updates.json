@@ -1,5 +1,5 @@
 {
-  "lastRun": "2025-03-02T06:47:29Z",
+  "lastRun": "2025-03-02T07:33:19Z",
   "domains": [ {
     "domain": "twitter.com",
     "records": [ {
@@ -70,9 +70,9 @@
     "domain": "vine.co",
     "records": [ {
       "type": "A",
-      "old": "34.211.170.157 35.166.244.225 ",
+      "old": "35.166.244.225 54.185.85.93 ",
       "current": "35.166.244.225 54.185.85.93 ",
-      "changed": true
+      "changed": false
     },{
       "type": "AAAA",
       "old": " ",
