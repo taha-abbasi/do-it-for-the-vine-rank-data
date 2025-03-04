@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-03-04T18:08:04Z",
+  "lastUpdated": "2025-03-04T18:08:14Z",
   "tokens": [
     {
       "address": "kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6",
@@ -94,7 +94,7 @@
       "holders": 892473,
       "volume_24h": 194393593,
       "icon": "https://arweave.net/hQiPZOsRZXGXBJd_82PhVdlM_hACsT_q6wqwf5cSY7I",
-      "supply": 8886154350045214085,
+      "supply": 8886154349972378832,
       "price_change_24h": -13.1078
     },
     {
@@ -434,28 +434,16 @@
       "price_change_24h": -7.23017
     },
     {
-      "address": "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr",
-      "name": "POPCAT",
-      "symbol": "POPCAT",
-      "market_cap": 211332328,
-      "price": 0.21424117364573872,
-      "holders": 129253,
-      "volume_24h": 66854295,
-      "icon": "https://arweave.net/A1etRNMKxhlNGTf-gNBtJ75QJJ4NJtbKh_UXQTlLXzI",
-      "supply": 979940703978141297,
-      "price_change_24h": -14.97888
-    },
-    {
       "address": "Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
       "name": "Just a chill guy",
       "symbol": "CHILLGUY",
       "market_cap": 30826339,
       "price": 0.030670585716670997,
       "holders": 126244,
-      "volume_24h": 16834058,
+      "volume_24h": 16807256,
       "icon": "https://ipfs.io/ipfs/QmaFy59TMnLb4jGgL6LpquyXSxTRXKR4mEfSobUSsPoR46",
-      "supply": 999955185847513,
-      "price_change_24h": -10.45961
+      "supply": 999955184847513,
+      "price_change_24h": -10.34682
     },
     {
       "address": "AMjzRn1TBQwQfNAjHFeBb7uGbbqbJB7FzXAnGgdFPk6K",
@@ -464,10 +452,10 @@
       "market_cap": 0,
       "price": 0.005076105951676604,
       "holders": 118904,
-      "volume_24h": 88391,
+      "volume_24h": 89553,
       "icon": "https://i.imgur.com/YN1yUMM.png",
       "supply": 999931241521277,
-      "price_change_24h": -3.09416
+      "price_change_24h": -4.40221
     },
     {
       "address": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
@@ -475,7 +463,7 @@
       "symbol": "ai16z",
       "market_cap": 331550750,
       "price": 0.29967151622013044,
-      "holders": 115145,
+      "holders": 115143,
       "volume_24h": 120424823,
       "icon": "https://ipfs.io/ipfs/QmcNTVAoyJ7zDbPnN9jwiMoB8uCoJBUP9RGmmiGGHv44yX",
       "supply": 1099998826505115321,
@@ -511,11 +499,11 @@
       "symbol": "Fartcoin ",
       "market_cap": 235747302,
       "price": 0.23350089529663182,
-      "holders": 113130,
-      "volume_24h": 211692732,
+      "holders": 113126,
+      "volume_24h": 212087238,
       "icon": "https://ipfs.io/ipfs/QmQr3Fz4h1etNsF7oLGMRHiCzhB5y9a7GjyodnF7zLHK1g",
-      "supply": 999994084169267,
-      "price_change_24h": -27.85608
+      "supply": 999994084168326,
+      "price_change_24h": -27.99976
     },
     {
       "address": "DRTeDJXZYYZxmq3tmgSPvLi3ef5E51cRH1KzzwXvC5M7",
@@ -535,11 +523,23 @@
       "symbol": "VINE",
       "market_cap": 36950797,
       "price": 0.036935577688933345,
-      "holders": 111070,
-      "volume_24h": 107486008,
+      "holders": 111069,
+      "volume_24h": 107859213,
       "icon": "https://ipfs.io/ipfs/QmRtFJu3ZospaS4EAk17iNXZGAJp7gMxzvsZckZxbqZa5r",
       "supply": 999986723847200,
-      "price_change_24h": -9.1155
+      "price_change_24h": -8.61433
+    },
+    {
+      "address": "DBRiDgJAMsM95moTzJs7M9LnkGErpbv9v6CUR1DXnUu5",
+      "name": "deBridge",
+      "symbol": "DBR",
+      "market_cap": 37533477,
+      "price": 0.020724662381991256,
+      "holders": 108767,
+      "volume_24h": 26945037,
+      "icon": "https://cdn.debridge.foundation/images/DBR.svg",
+      "supply": 9999989742561925,
+      "price_change_24h": -1.73275
     },
     {
       "address": "AcV2T3mwLUqMiiqcsafVm35zwPQkmLrfRtaW3716Fzvi",
@@ -1100,10 +1100,10 @@
       "market_cap": 646195248,
       "price": 2.14139163726565,
       "holders": 64571,
-      "volume_24h": 84655882,
+      "volume_24h": 84142294,
       "icon": "https://metadata.jito.network/token/jto/image",
       "supply": 999999767336457811,
-      "price_change_24h": -17.4719
+      "price_change_24h": -16.74298
     },
     {
       "address": "RLBxxFkseAZ4RgJH3Sqn8jXxhmGoz9jWxDNJMh8pL7a",
