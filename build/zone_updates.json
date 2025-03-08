@@ -1,26 +1,26 @@
 {
-  "lastRun": "2025-03-07 20:11:55",
+  "lastRun": "2025-03-07 20:21:36",
   "domains": [
     {
           "domain": "twitter.com",
-          "serial": "2024011501",
-          "changed": false,
-          "lastChecked": "2025-03-07 20:11:55"
+          "serial": "2024078784",
+          "changed": true,
+          "lastChecked": "2025-03-07 20:21:36"
         },{
           "domain": "x.com",
-          "serial": "2023121201",
+          "serial": "2023188441",
           "changed": true,
-          "lastChecked": "2025-03-07 20:11:55"
+          "lastChecked": "2025-03-07 20:21:36"
         },{
           "domain": "vine.co",
           "serial": "1",
           "changed": false,
-          "lastChecked": "2025-03-07 20:11:55"
+          "lastChecked": "2025-03-07 20:21:36"
         },{
           "domain": "vineco.in",
           "serial": "1738609881",
           "changed": false,
-          "lastChecked": "2025-03-07 20:11:55"
+          "lastChecked": "2025-03-07 20:21:36"
         }
   ]
 }
