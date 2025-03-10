@@ -1,12 +1,12 @@
 {
-  "lastRun": "2025-03-10T08:21:47Z",
+  "lastRun": "2025-03-10T08:31:53Z",
   "domains": [ {
     "domain": "twitter.com",
     "records": [ {
       "type": "A",
       "old": "104.244.42.1 104.244.42.129 104.244.42.193 104.244.42.65 ",
-      "current": "104.244.42.1 104.244.42.129 104.244.42.193 104.244.42.65 ",
-      "changed": false
+      "current": "104.244.42.1 ",
+      "changed": true
     },{
       "type": "AAAA",
       "old": " ",
@@ -19,8 +19,8 @@
       "changed": false
     },{
       "type": "MX",
-      "old": "1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. ",
-      "current": "1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ",
+      "old": "1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ",
+      "current": "1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. ",
       "changed": true
     },{
       "type": "TXT",
