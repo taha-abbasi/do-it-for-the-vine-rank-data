@@ -1,11 +1,11 @@
 {
-  "lastRun": "2025-03-11T16:21:58Z",
+  "lastRun": "2025-03-11T16:31:56Z",
   "domains": [ {
     "domain": "twitter.com",
     "records": [ {
       "type": "A",
-      "old": "172.66.0.227 ",
-      "current": "162.159.140.229 ",
+      "old": "162.159.140.229 ",
+      "current": "172.66.0.227 ",
       "changed": true
     },{
       "type": "AAAA",
@@ -37,8 +37,8 @@
     "domain": "x.com",
     "records": [ {
       "type": "A",
-      "old": "162.159.140.229 172.66.0.227 ",
-      "current": "172.66.0.227 ",
+      "old": "172.66.0.227 ",
+      "current": "162.159.140.229 ",
       "changed": true
     },{
       "type": "AAAA",
@@ -53,8 +53,8 @@
     },{
       "type": "MX",
       "old": "1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ",
-      "current": "1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ",
-      "changed": false
+      "current": "1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. ",
+      "changed": true
     },{
       "type": "TXT",
       "old": "\"3089463\" \"_w548xs1kfxtlqk3jyx19bzwk34c473i\" \"adobe-idp-site-verification=ab4d9ce3473a73e81f46238da34ea4967fd5ac80e5c43fbfa8dff46d06a5321c\" \"adobe-sign-verification=c693a744ee2d282a36a43e6e724c5ea\" \"apple-domain-verification=sEij6tJOW11fVNrG\" \"atlassian-domain-verification=j6u0o1PTkobCXC84uEF/sWpIPtaZURBVYqKzmTvT8wugLcHT1vvrzzA63iP1qSLN\" \"atlassian-sending-domain-verification=bd424180-8645-4de5-bd6a-285479c7577a\" \"figma-domain-verification=ee8420edd01965ba297f3438c907cfc6fbbaa1ee90a07b28f28bcfca8e6017bb-1729630998\" \"google-site-verification=8yQmoVhQedzlt36RPeQP41ytrEFk9aHEnde_xm0626g\" \"google-site-verification=F6u9mGL--d2lbLljvH3b1UUgXtevQPdcamKr9c8914A\" \"kkdl3qb3tcrmdhfsm803p67r0my0svs8\" \"shopify-verification-code=cUZazKrqCWgcshrcGvgfFR1lieuhRF\" \"slack-domain-verification=Csk4bjCPFnJaDLLaKFUwCTFuUpCVvnYlAm2Tba0i\" \"stripe-verification=46F7B88485621DC18923B43D12E90E6CDBCE232F2FEBCF084E6EFA91F6BA707D\" \"v=spf1 ip4:199.16.156.0/22 ip4:199.59.148.0/22 include:_spf.google.com include:_spf.salesforce.com include:_oerp.x.com include:phx1.rp.oracleemaildelivery.com include:iad1.rp.oracleemaildelivery.com -all\" ",
