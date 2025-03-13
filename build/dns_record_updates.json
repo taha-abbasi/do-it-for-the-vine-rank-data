@@ -1,12 +1,12 @@
 {
-  "lastRun": "2025-03-13T21:41:50Z",
+  "lastRun": "2025-03-13T21:51:55Z",
   "domains": [ {
     "domain": "twitter.com",
     "records": [ {
       "type": "A",
-      "old": "162.159.140.229 172.66.0.227 ",
+      "old": "162.159.140.229 ",
       "current": "162.159.140.229 ",
-      "changed": true
+      "changed": false
     },{
       "type": "AAAA",
       "old": " ",
@@ -20,8 +20,8 @@
     },{
       "type": "MX",
       "old": "1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ",
-      "current": "1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ",
-      "changed": false
+      "current": "1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. ",
+      "changed": true
     },{
       "type": "TXT",
       "old": "\"0a8c0fc6-bfa5-4ea7-b09b-87f2989022d6\" \"MS=BEE202D20C326867290BDEFA2DDDF4594B5D6860\" \"adobe-idp-site-verification=a2ff8fc40c434d1d6f02f68b0b1a683e400572ab8c1f2c180c71c3d985b9270a\" \"apple-domain-verification=zd1iHoEO9LILEQIq\" \"atlassian-domain-verification=j6u0o1PTkobCXC84uEF/sWpIPtaZURBVYqKzmTvT8wugLcHT1vvrzzA63iP1qSLN\" \"bj6sbt5xqs9hw9jrfvz7hplrg0l680sb\" \"canva-site-verification=lMnZ3wMh7c1uqZqa-cxZTg\" \"google-site-verification=600dQ0pZYsH2xOFt4hYmf5f5NpjCbWE_qk5Y04dErYM\" \"google-site-verification=TNhAkfLUeIbzzzSgPNxS5aEkKMf3aUcpPmCK1_kmIvU\" \"google-site-verification=h6dJIv0HXjLOkGAotLAWEzvoi9SxqP4vjpx98vrCvvQ\" \"loom-site-verification=638c6bc173b9458997f64d305bf42499\" \"miro-verification=6e1ca9ad6d0c2cd2e4186141265f23ed618cfe37\" \"mixpanel-domain-verify=164dda91-31f4-41e8-a816-0f59b38fea30\" \"slack-domain-verification=9oO8P4Glf4252QJDOg4rHGs6KlSkBuI5ZVmWRO8d\" \"stripe-verification=46F7B88485621DC18923B43D12E90E6CDBCE232F2FEBCF084E6EFA91F6BA707D\" \"traction-guest=6882b04e-4188-4ff9-8bb4-bff5a3d358e6\" \"traction-guest=a4d0248d-fe01-4222-8fcc-33f68323e667\" \"v=spf1 ip4:199.16.156.0/22 ip4:199.59.148.0/22 ip4:8.25.194.0/23 ip4:8.25.196.0/23 ip4:204.92.114.203 ip4:204.92.114.204/31 include:_spf.google.com include:_thirdparty.twitter.com -all\" \"wrike-verification=MjU4MTA5MjoyN2UzNDc1MjU3MDZiZTY4NjBiNzliNDQ2OTUwNWY3NmM5NDgyMTBlYzFkNTcwYTE2YWNmZDdkNTY2ZmE4Yzlh\" ",
@@ -37,9 +37,9 @@
     "domain": "x.com",
     "records": [ {
       "type": "A",
-      "old": "162.159.140.229 ",
+      "old": "172.66.0.227 ",
       "current": "172.66.0.227 ",
-      "changed": true
+      "changed": false
     },{
       "type": "AAAA",
       "old": " ",
