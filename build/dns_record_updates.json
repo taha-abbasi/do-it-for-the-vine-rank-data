@@ -1,11 +1,11 @@
 {
-  "lastRun": "2025-03-14T21:40:35Z",
+  "lastRun": "2025-03-14T22:06:16Z",
   "domains": [ {
     "domain": "twitter.com",
     "records": [ {
       "type": "A",
-      "old": "172.66.0.227 ",
-      "current": "162.159.140.229 ",
+      "old": "162.159.140.229 ",
+      "current": "162.159.140.229 172.66.0.227 ",
       "changed": true
     },{
       "type": "AAAA",
@@ -19,8 +19,8 @@
       "changed": false
     },{
       "type": "MX",
-      "old": "1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. ",
-      "current": "1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. ",
+      "old": "1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ",
+      "current": "1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ",
       "changed": false
     },{
       "type": "TXT",
@@ -37,9 +37,9 @@
     "domain": "x.com",
     "records": [ {
       "type": "A",
-      "old": "172.66.0.227 ",
+      "old": "162.159.140.229 172.66.0.227 ",
       "current": "162.159.140.229 172.66.0.227 ",
-      "changed": true
+      "changed": false
     },{
       "type": "AAAA",
       "old": " ",
@@ -52,8 +52,8 @@
       "changed": false
     },{
       "type": "MX",
-      "old": "1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. ",
-      "current": "1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ",
+      "old": "1 ASPMX.L.GOOGLE.com. 10 ALT3.ASPMX.L.GOOGLE.com. 10 ALT4.ASPMX.L.GOOGLE.com. 5 ALT1.ASPMX.L.GOOGLE.com. 5 ALT2.ASPMX.L.GOOGLE.com. ",
+      "current": "1 aspmx.l.google.com. 10 alt3.aspmx.l.google.com. 10 alt4.aspmx.l.google.com. 5 alt1.aspmx.l.google.com. 5 alt2.aspmx.l.google.com. ",
       "changed": true
     },{
       "type": "TXT",
