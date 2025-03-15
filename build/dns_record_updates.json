@@ -1,11 +1,11 @@
 {
-  "lastRun": "2025-03-15T02:01:33Z",
+  "lastRun": "2025-03-15T02:11:54Z",
   "domains": [ {
     "domain": "twitter.com",
     "records": [ {
       "type": "A",
-      "old": "172.66.0.227 ",
-      "current": "162.159.140.229 172.66.0.227 ",
+      "old": "162.159.140.229 172.66.0.227 ",
+      "current": "162.159.140.229 ",
       "changed": true
     },{
       "type": "AAAA",
@@ -37,9 +37,9 @@
     "domain": "x.com",
     "records": [ {
       "type": "A",
-      "old": "162.159.140.229 172.66.0.227 ",
+      "old": "162.159.140.229 ",
       "current": "162.159.140.229 ",
-      "changed": true
+      "changed": false
     },{
       "type": "AAAA",
       "old": " ",
