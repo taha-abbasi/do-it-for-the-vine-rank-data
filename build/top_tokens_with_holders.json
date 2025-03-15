@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2025-03-15T01:11:56Z",
+  "lastUpdated": "2025-03-15T01:21:55Z",
   "tokens": [
     {
       "address": "kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6",
       "name": "KIN",
       "symbol": "KIN",
       "market_cap": 17926094,
-      "price": 0.000006631622066186737,
+      "price": 0.000006637494612831717,
       "holders": 62720609,
-      "volume_24h": 255398,
+      "volume_24h": 255528,
       "icon": "https://i.imgur.com/91Rexkn.png",
       "supply": 267911484935090538,
-      "price_change_24h": 11.73393
+      "price_change_24h": 12.05885
     },
     {
       "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
@@ -19,107 +19,107 @@
       "symbol": "USDC",
       "market_cap": 58579418503,
       "price": 1,
-      "holders": 3908085,
-      "volume_24h": 8527292890,
+      "holders": 3908111,
+      "volume_24h": 9052348861,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v/logo.png",
-      "supply": 9814869233640509,
-      "price_change_24h": 0.001
+      "supply": 9814859826252355,
+      "price_change_24h": 0.0005
     },
     {
       "address": "CKaKtYvz6dKPyMvYq9Rh3UBrnNqYZAyd7iF4hJtjUvks",
       "name": "Gari",
       "symbol": "GARI",
       "market_cap": 2761372,
-      "price": 0.004232763702470425,
+      "price": 0.004207514212841718,
       "holders": 2843354,
-      "volume_24h": 119908,
+      "volume_24h": 119262,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/CKaKtYvz6dKPyMvYq9Rh3UBrnNqYZAyd7iF4hJtjUvks/logo.png",
       "supply": 972437803408583300,
-      "price_change_24h": -2.75354
+      "price_change_24h": -2.76978
     },
     {
       "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
       "name": "USDT",
       "symbol": "USDT",
       "market_cap": 143349424457,
-      "price": 1.0001369589909548,
-      "holders": 1806605,
-      "volume_24h": 48518099221,
+      "price": 1.000059181437806,
+      "holders": 1806649,
+      "volume_24h": 28833221947,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB/logo.svg",
       "supply": 2039933930541725,
-      "price_change_24h": 0.05022
+      "price_change_24h": 0.03832
     },
     {
       "address": "7atgF8KQo4wJrD5ATGX7t1V2zVvykPJbFfNeVf1icFv1",
       "name": "catwifhat",
       "symbol": "$CWIF",
       "market_cap": 3305572,
-      "price": 1.0360106507791009E-7,
+      "price": 1.0876058974377477E-7,
       "holders": 1549475,
-      "volume_24h": 138096,
+      "volume_24h": 137173,
       "icon": "https://bafkreigmg552j5o5qv5ra6hvg4by4qzjjichzsyaljhmyvwe5qkjphgxoi.ipfs.nftstorage.link",
       "supply": 99994035445076637,
-      "price_change_24h": 15.3675
+      "price_change_24h": 15.45193
     },
     {
       "address": "So11111111111111111111111111111111111111112",
       "name": "Wrapped SOL",
       "symbol": "WSOL",
       "market_cap": 68075776538,
-      "price": 133.3355915629924,
-      "holders": 1493992,
-      "volume_24h": 3630164986,
+      "price": 133.36019959706337,
+      "holders": 1494069,
+      "volume_24h": 3628044727,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/So11111111111111111111111111111111111111112/logo.png",
       "supply": 0,
-      "price_change_24h": 7.89595
+      "price_change_24h": 8.16436
     },
     {
       "address": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
       "name": "Jupiter",
       "symbol": "JUP",
       "market_cap": 1425444713,
-      "price": 0.5264499386683911,
-      "holders": 984080,
-      "volume_24h": 68186785,
+      "price": 0.5261921688052715,
+      "holders": 984083,
+      "volume_24h": 68622354,
       "icon": "https://static.jup.ag/jup/icon.png",
       "supply": 6999978366722991,
-      "price_change_24h": 4.50377
+      "price_change_24h": 4.79398
     },
     {
       "address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
       "name": "Bonk",
       "symbol": "Bonk",
       "market_cap": 843104357,
-      "price": 0.000010901174964620528,
-      "holders": 904038,
-      "volume_24h": 69700589,
+      "price": 0.000010924036522325467,
+      "holders": 904034,
+      "volume_24h": 69851101,
       "icon": "https://arweave.net/hQiPZOsRZXGXBJd_82PhVdlM_hACsT_q6wqwf5cSY7I",
-      "supply": 8885568920556969521,
-      "price_change_24h": 3.73758
+      "supply": 8885568670897425483,
+      "price_change_24h": 3.60591
     },
     {
       "address": "AFbX8oGjGpmVFywbVouvhQSRmiW2aR1mohfahi4Y2AdB",
       "name": "GST",
       "symbol": "GST",
       "market_cap": 10365060,
-      "price": 0.009042727272727273,
-      "holders": 779757,
-      "volume_24h": 437376,
+      "price": 0.009150171594611697,
+      "holders": 779759,
+      "volume_24h": 438620,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/AFbX8oGjGpmVFywbVouvhQSRmiW2aR1mohfahi4Y2AdB/logo.png",
       "supply": 2932981476325775827,
-      "price_change_24h": 1.90156
+      "price_change_24h": 2.29981
     },
     {
       "address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
       "name": "OFFICIAL TRUMP",
       "symbol": "TRUMP",
       "market_cap": 2378193333,
-      "price": 12.303772627672743,
-      "holders": 641520,
-      "volume_24h": 1627504145,
+      "price": 12.398321362256901,
+      "holders": 641519,
+      "volume_24h": 1474690957,
       "icon": "https://arweave.net/VQrPjACwnQRmxdKBTqNwPiyo65x7LAT773t8Kd7YBzw",
       "supply": 999999551449213,
-      "price_change_24h": 10.67343
+      "price_change_24h": 10.82392
     },
     {
       "address": "EcQCUYv57C4V6RoPxkVUiDwtX1SP8y8FP5AEToYL8Az",
@@ -128,130 +128,130 @@
       "market_cap": 1143572,
       "price": 0.0008889670623464781,
       "holders": 533954,
-      "volume_24h": 1329876,
+      "volume_24h": 1308839,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EcQCUYv57C4V6RoPxkVUiDwtX1SP8y8FP5AEToYL8Az/logo.svg",
       "supply": 1836426302115093088,
-      "price_change_24h": 11.98241
+      "price_change_24h": 11.44294
     },
     {
       "address": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
       "name": "Pudgy Penguins",
       "symbol": "PENGU",
       "market_cap": 412798475,
-      "price": 0.006647730322202137,
-      "holders": 520665,
-      "volume_24h": 126247759,
+      "price": 0.006657028249238167,
+      "holders": 520664,
+      "volume_24h": 127163794,
       "icon": "https://arweave.net/BW67hICaKGd2_wamSB0IQq-x7Xwtmr2oJj1WnWGJRHU",
       "supply": 88888525769341330,
-      "price_change_24h": 12.10823
+      "price_change_24h": 12.16731
     },
     {
       "address": "hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux",
       "name": "Helium Network Token",
       "symbol": "HNT",
       "market_cap": 528794692,
-      "price": 2.952803451370784,
-      "holders": 518948,
-      "volume_24h": 5392755,
+      "price": 2.95557035492624,
+      "holders": 518946,
+      "volume_24h": 5212313,
       "icon": "https://shdw-drive.genesysgo.net/6tcnBSybPG7piEDShBcrVtYJDPSvGrDbVvXmXKpzBvWP/hnt.png",
-      "supply": 17949627859932171,
-      "price_change_24h": 6.52822
+      "supply": 17949626835103929,
+      "price_change_24h": 6.41306
     },
     {
       "address": "7i5KKsX2weiTkry7jA4ZwSuXGhs5eJBEjY8vVxR4pfRx",
       "name": "GMT",
       "symbol": "GMT",
       "market_cap": 137208464,
-      "price": 0.05076278507338981,
-      "holders": 420329,
-      "volume_24h": 25569429,
+      "price": 0.050003971288582374,
+      "holders": 420325,
+      "volume_24h": 25506663,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/7i5KKsX2weiTkry7jA4ZwSuXGhs5eJBEjY8vVxR4pfRx/logo.png",
       "supply": 1944310997608191640,
-      "price_change_24h": 3.64312
+      "price_change_24h": 3.42379
     },
     {
       "address": "xxxxa1sKNGwFtw2kFn8XauW9xq8hBZ5kVtcSesTT9fW",
       "name": "Solanium",
       "symbol": "SLIM",
       "market_cap": 5529676,
-      "price": 0.05575619292654018,
+      "price": 0.05548935158679422,
       "holders": 411891,
-      "volume_24h": 380849,
+      "volume_24h": 379160,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/xxxxa1sKNGwFtw2kFn8XauW9xq8hBZ5kVtcSesTT9fW/logo.png",
       "supply": 99995447363460,
-      "price_change_24h": 7.47558
+      "price_change_24h": 7.50772
     },
     {
       "address": "Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs",
       "name": "Grass",
       "symbol": "GRASS",
       "market_cap": 408139993,
-      "price": 1.4929039835012266,
+      "price": 1.488502646158824,
       "holders": 338113,
-      "volume_24h": 97682342,
+      "volume_24h": 96714060,
       "icon": "https://static.grassfoundation.io/grass-logo.png",
-      "supply": 999998175541621216,
-      "price_change_24h": 8.08797
+      "supply": 999998175541621215,
+      "price_change_24h": 8.74462
     },
     {
       "address": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
       "name": "Pyth Network",
       "symbol": "PYTH",
       "market_cap": 539718317,
-      "price": 0.14931601610174491,
-      "holders": 319503,
-      "volume_24h": 26005902,
+      "price": 0.14941920369337258,
+      "holders": 319504,
+      "volume_24h": 26025672,
       "icon": "https://pyth.network/token.svg",
       "supply": 9999987902490039,
-      "price_change_24h": 5.54509
+      "price_change_24h": 5.95845
     },
     {
       "address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
       "name": "Melania Meme",
       "symbol": "MELANIA",
       "market_cap": 103786560,
-      "price": 0.698815335453639,
-      "holders": 248510,
-      "volume_24h": 24106551,
+      "price": 0.6985302336342437,
+      "holders": 248509,
+      "volume_24h": 24045486,
       "icon": "https://gateway.pinata.cloud/ipfs/bafkreiduq5c43xdbcbhzx3plcdtz2jwkjpzlm2hwkoxhjgmnmqbl6otyfu",
       "supply": 999999173813601,
-      "price_change_24h": 1.68834
+      "price_change_24h": -0.19185
     },
     {
       "address": "WENWENvqqNya429ubCdR81ZmD69brwQaaBYY6p3LCpk",
       "name": "Wen",
       "symbol": "WEN",
       "market_cap": 16002511,
-      "price": 0.000021934327546333505,
-      "holders": 233739,
-      "volume_24h": 2401171,
+      "price": 0.00002201162201977359,
+      "holders": 233737,
+      "volume_24h": 2400527,
       "icon": "https://assets.coingecko.com/coins/images/34856/standard/wen-logo-new.jpg?1741334229",
       "supply": 72763886373960721,
-      "price_change_24h": 4.63076
+      "price_change_24h": 5.39651
     },
     {
       "address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
       "name": "Raydium",
       "symbol": "RAY",
       "market_cap": 471566087,
-      "price": 1.635471062615106,
+      "price": 1.6385537757965505,
       "holders": 231379,
-      "volume_24h": 58663601,
+      "volume_24h": 58229234,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R/logo.png",
       "supply": 554999074510041,
-      "price_change_24h": 8.51248
+      "price_change_24h": 9.13799
     },
     {
       "address": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
       "name": "dogwifhat",
       "symbol": "$WIF",
       "market_cap": 507883848,
-      "price": 0.506104834331196,
-      "holders": 218525,
-      "volume_24h": 331175592,
+      "price": 0.5482585983434828,
+      "holders": 218528,
+      "volume_24h": 330235217,
       "icon": "https://bafkreibk3covs5ltyqxa272uodhculbr6kea6betidfwy3ajsav2vjzyum.ipfs.nftstorage.link",
       "supply": 998840980353854,
-      "price_change_24h": 6.88412
+      "price_change_24h": 6.72973
     },
     {
       "address": "BLZEEuZUBVqFhj8adcCFPJvPVCiCyVmh3hkJMrU8KuJA",
@@ -260,10 +260,10 @@
       "market_cap": 0,
       "price": 0.00027589033705422756,
       "holders": 213484,
-      "volume_24h": 6847.39,
+      "volume_24h": 6825.94,
       "icon": "https://solblaze.org/assets/blze.png?v=2",
       "supply": 9997879032386671535,
-      "price_change_24h": 7.60407
+      "price_change_24h": 7.4639
     },
     {
       "address": "Cx9oLynYgC3RrgXzin7U417hNY9D6YB1eMGw4ZMbWJgw",
@@ -272,10 +272,10 @@
       "market_cap": 0,
       "price": 0.0008742291888760985,
       "holders": 203657,
-      "volume_24h": 16.82,
+      "volume_24h": 16.81,
       "icon": "https://arweave.net/DPVMg1fFjs1NnVJOzfbrueYoB2smv6KiP4vahLyhk1c",
       "supply": 38489936372772632,
-      "price_change_24h": 2.122
+      "price_change_24h": 2.05
     },
     {
       "address": "iotEVVZLEywoTn1QdwNPddxPWszn3zFhEot3MfL9fns",
@@ -283,11 +283,11 @@
       "symbol": "IOT",
       "market_cap": 40205902,
       "price": 0.0004403576469006776,
-      "holders": 194806,
-      "volume_24h": 8108.99,
+      "holders": 194807,
+      "volume_24h": 8107.38,
       "icon": "https://shdw-drive.genesysgo.net/6tcnBSybPG7piEDShBcrVtYJDPSvGrDbVvXmXKpzBvWP/iot.png",
-      "supply": 25545186793085801,
-      "price_change_24h": 6.89374
+      "supply": 25545179422114934,
+      "price_change_24h": 7.42274
     },
     {
       "address": "5MAYDfq5yxtudAhtfyuMBuHZjgAbaS9tbEyEQYAhDS5y",
@@ -296,46 +296,46 @@
       "market_cap": 61463752,
       "price": 0.0014953091149658663,
       "holders": 184310,
-      "volume_24h": 879123,
+      "volume_24h": 857997,
       "icon": "https://ap-staging.fra1.digitaloceanspaces.com/1663691449945",
-      "supply": 88547216307205593,
-      "price_change_24h": 4.07403
+      "supply": 88547216346058317,
+      "price_change_24h": 3.4886
     },
     {
       "address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
       "name": "cat in a dogs world",
       "symbol": "MEW",
       "market_cap": 168804598,
-      "price": 0.0018938797091641133,
+      "price": 0.001893569905083016,
       "holders": 174843,
-      "volume_24h": 11646561,
+      "volume_24h": 11594511,
       "icon": "https://bafkreidlwyr565dxtao2ipsze6bmzpszqzybz7sqi2zaet5fs7k53henju.ipfs.nftstorage.link/",
       "supply": 8888616069109419,
-      "price_change_24h": 4.98748
+      "price_change_24h": 5.10423
     },
     {
       "address": "B89Hd5Juz7JP2dxCZXFJWk4tMTcbw7feDhuWGb3kq5qE",
       "name": "Nodecoin",
       "symbol": "NC",
       "market_cap": 10553103,
-      "price": 0.053711651739519625,
-      "holders": 168713,
-      "volume_24h": 9290311,
+      "price": 0.05357982690349427,
+      "holders": 168710,
+      "volume_24h": 9194118,
       "icon": "https://arweave.net/3fUHo_BbHmQnBYM1BNAj8pECYuAYYNYfVXdZ88yLSfc",
       "supply": 999995409037201019,
-      "price_change_24h": -1.96367
+      "price_change_24h": -3.71174
     },
     {
       "address": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
       "name": "Jito Staked SOL",
       "symbol": "JitoSOL",
       "market_cap": 0,
-      "price": 158.1333107932247,
-      "holders": 167143,
-      "volume_24h": 24503990,
+      "price": 158.17858768192053,
+      "holders": 167145,
+      "volume_24h": 24407982,
       "icon": "https://storage.googleapis.com/token-metadata/JitoSOL-256.png",
-      "supply": 13904178841858549,
-      "price_change_24h": 7.48069
+      "supply": 13904176750361671,
+      "price_change_24h": 7.9877
     },
     {
       "address": "UPTx1d24aBWuRgwxVnFmX4gNraj3QGFzL3QqBgxtWQG",
@@ -344,34 +344,34 @@
       "market_cap": 2675593,
       "price": 0.012537094256691101,
       "holders": 150900,
-      "volume_24h": 94797,
+      "volume_24h": 94860,
       "icon": "https://raw.githubusercontent.com/uprockcom/token/main/logo.png",
       "supply": 998728047955153907,
-      "price_change_24h": 0.85791
+      "price_change_24h": 1.25382
     },
     {
       "address": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
       "name": "Marinade staked SOL (mSOL)",
       "symbol": "mSOL",
       "market_cap": 641901103,
-      "price": 170.03069456231276,
-      "holders": 149175,
-      "volume_24h": 12661067,
+      "price": 169.9658989047664,
+      "holders": 149177,
+      "volume_24h": 12261715,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So/logo.png",
-      "supply": 3778124079771610,
-      "price_change_24h": 7.62648
+      "supply": 3781652757929565,
+      "price_change_24h": 7.90889
     },
     {
       "address": "ATLASXmbPQxBUYbxPsV97usA3fPQYEqzQBUHgiFCUsXx",
       "name": "Star Atlas",
       "symbol": "ATLAS",
       "market_cap": 24731383,
-      "price": 0.0013481582169726223,
+      "price": 0.0013444054006536885,
       "holders": 146632,
-      "volume_24h": 1015982,
+      "volume_24h": 1041466,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/ATLASXmbPQxBUYbxPsV97usA3fPQYEqzQBUHgiFCUsXx/logo.png",
       "supply": 3599982440207435560,
-      "price_change_24h": 7.21606
+      "price_change_24h": 7.64436
     },
     {
       "address": "3DH8WZ6C2HdDR4J9ekYnTfai8Tx8mxn92mW8zcYmP4px",
@@ -380,22 +380,22 @@
       "market_cap": 0,
       "price": 0.00015043821129818644,
       "holders": 145615,
-      "volume_24h": 104.88,
+      "volume_24h": 104.75,
       "icon": "https://arweave.net/S7UYKRUpMyemVFVcquML0uBsH8hQ1euT9RgLvBJ8y4Y",
       "supply": 723518974952484818,
-      "price_change_24h": 8.79409
+      "price_change_24h": 9.22066
     },
     {
       "address": "MEFNBXixkEbait3xn9bkm8WsJzXtVsaJEn4c8Sam21u",
       "name": "Magic Eden",
       "symbol": "ME",
       "market_cap": 144975410,
-      "price": 1.0879372491999357,
-      "holders": 137948,
-      "volume_24h": 16256582,
+      "price": 1.0910608865616875,
+      "holders": 137949,
+      "volume_24h": 16282237,
       "icon": "https://arweave.net/hhifTzaEDnPKnYNi4aAhkZTUkNLoK6d3nMiQPAjByn4",
       "supply": 999999692578588,
-      "price_change_24h": 3.18872
+      "price_change_24h": 3.57194
     },
     {
       "address": "85cQsFgbi8mBZxiPppbpPXuV7j1hA8tBwhjF4gKW6mHg",
@@ -404,10 +404,10 @@
       "market_cap": 758451,
       "price": 0.0000014684578578065555,
       "holders": 135888,
-      "volume_24h": 588189,
+      "volume_24h": 590371,
       "icon": "https://arweave.net/4KejFFTPvFjxc0NkqOCADL7BVZ9xzgh2FNPunMadZrQ",
       "supply": 496698513492576752,
-      "price_change_24h": 11.69291
+      "price_change_24h": 11.5553
     },
     {
       "address": "Fxgdfsy1Z5Mvh53o69s2Ev6TGxtAJ1RQ5RJ5moCpKmQZ",
@@ -416,34 +416,34 @@
       "market_cap": 91378,
       "price": 0.00009155282691307214,
       "holders": 130593,
-      "volume_24h": 101.25,
+      "volume_24h": 101.02,
       "icon": "https://bafybeiay63g7wqdbndfp6yxuvonuigsp4qrgm22ultyndxurnuu7tkkbbi.ipfs.nftstorage.link",
       "supply": 999360509990570137,
-      "price_change_24h": 9.02855
+      "price_change_24h": 9.4431
     },
     {
       "address": "DkNihsQs1hqEwf9TgKP8FmGv7dmMQ7hnKjS2ZSmMZZBE",
       "name": "Quiztok Token (Wormhole)",
       "symbol": "QTCON",
       "market_cap": 12395942,
-      "price": 0.00112864,
+      "price": 0.00112881,
       "holders": 130012,
-      "volume_24h": 49156,
+      "volume_24h": 49163,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/DkNihsQs1hqEwf9TgKP8FmGv7dmMQ7hnKjS2ZSmMZZBE/logo.png",
       "supply": 12069077178932487,
-      "price_change_24h": 7.07215
+      "price_change_24h": 7.08287
     },
     {
       "address": "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr",
       "name": "POPCAT",
       "symbol": "POPCAT",
       "market_cap": 187967188,
-      "price": 0.19201167680049094,
-      "holders": 129259,
-      "volume_24h": 95061870,
+      "price": 0.19190207009120866,
+      "holders": 129258,
+      "volume_24h": 94748862,
       "icon": "https://arweave.net/A1etRNMKxhlNGTf-gNBtJ75QJJ4NJtbKh_UXQTlLXzI",
       "supply": 979940606882079039,
-      "price_change_24h": 8.35546
+      "price_change_24h": 7.88153
     },
     {
       "address": "HVbpJAQGNpkgBaYBZQBR1t7yFdvaYVp2vCQQfKKEN4tM",
@@ -451,83 +451,83 @@
       "symbol": "USDP",
       "market_cap": 79294320,
       "price": 1.001,
-      "holders": 128868,
-      "volume_24h": 2379745,
+      "holders": 128870,
+      "volume_24h": 2375009,
       "icon": "https://424565.fs1.hubspotusercontent-na1.net/hubfs/424565/USDPLOGO.png",
       "supply": 1159845524089,
-      "price_change_24h": 0.07593
+      "price_change_24h": 0.06574
     },
     {
       "address": "Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
       "name": "Just a chill guy",
       "symbol": "CHILLGUY",
       "market_cap": 28873431,
-      "price": 0.028963244844632374,
-      "holders": 127988,
-      "volume_24h": 9682528,
+      "price": 0.029012440978958883,
+      "holders": 127990,
+      "volume_24h": 9700391,
       "icon": "https://ipfs.io/ipfs/QmaFy59TMnLb4jGgL6LpquyXSxTRXKR4mEfSobUSsPoR46",
       "supply": 999955002510227,
-      "price_change_24h": 10.39959
+      "price_change_24h": 10.65231
     },
     {
       "address": "AMjzRn1TBQwQfNAjHFeBb7uGbbqbJB7FzXAnGgdFPk6K",
       "name": "SolCex ",
       "symbol": "SOLCEX",
       "market_cap": 0,
-      "price": 0.004057266216499389,
+      "price": 0.004037474942943562,
       "holders": 118724,
-      "volume_24h": 29765,
+      "volume_24h": 29539,
       "icon": "https://i.imgur.com/YN1yUMM.png",
       "supply": 999930820060595,
-      "price_change_24h": 1.06538
+      "price_change_24h": 2.69775
     },
     {
       "address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
       "name": "Fartcoin ",
       "symbol": "Fartcoin ",
       "market_cap": 285294347,
-      "price": 0.2905247338542997,
-      "holders": 115548,
-      "volume_24h": 130103434,
+      "price": 0.28961978595102894,
+      "holders": 115541,
+      "volume_24h": 128797805,
       "icon": "https://ipfs.io/ipfs/QmQr3Fz4h1etNsF7oLGMRHiCzhB5y9a7GjyodnF7zLHK1g",
       "supply": 999993790507975,
-      "price_change_24h": 19.53502
+      "price_change_24h": 17.94725
     },
     {
       "address": "DBRiDgJAMsM95moTzJs7M9LnkGErpbv9v6CUR1DXnUu5",
       "name": "deBridge",
       "symbol": "DBR",
       "market_cap": 45888317,
-      "price": 0.025496612892262377,
+      "price": 0.025493,
       "holders": 114477,
-      "volume_24h": 16341656,
+      "volume_24h": 16199946,
       "icon": "https://cdn.debridge.foundation/images/DBR.svg",
       "supply": 9999988905873686,
-      "price_change_24h": 1.76935
+      "price_change_24h": 2.14488
     },
     {
       "address": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
       "name": "ai16z",
       "symbol": "ai16z",
       "market_cap": 203521809,
-      "price": 0.18597646441815335,
-      "holders": 114353,
-      "volume_24h": 53877407,
+      "price": 0.18561646813277233,
+      "holders": 114356,
+      "volume_24h": 53629256,
       "icon": "https://ipfs.io/ipfs/QmcNTVAoyJ7zDbPnN9jwiMoB8uCoJBUP9RGmmiGGHv44yX",
       "supply": 1099998799976974136,
-      "price_change_24h": 4.79598
+      "price_change_24h": 3.26223
     },
     {
       "address": "HAPPYwgFcjEJDzRtfWE6tiHE9zGdzpNky2FvjPHsvvGZ",
       "name": "Happy Cat",
       "symbol": "HAPPY",
       "market_cap": 2628483,
-      "price": 0.0007934380437174882,
-      "holders": 114277,
-      "volume_24h": 8906661,
+      "price": 0.0007894786449377019,
+      "holders": 114276,
+      "volume_24h": 8998813,
       "icon": "https://ipfs.io/ipfs/QmePUch18pVBHf4z2LM7D6RC3wnaFB3Tff3iXVE6nKLsws",
       "supply": 3333135733794566078,
-      "price_change_24h": 0.43949
+      "price_change_24h": 2.01302
     },
     {
       "address": "PFireKhT5WG7axMSLBmMRpvYH7cgHx9CRWHU8F8HNbr",
@@ -536,10 +536,10 @@
       "market_cap": 61354,
       "price": 8.179681460913018E-9,
       "holders": 113267,
-      "volume_24h": 765.83,
+      "volume_24h": 766.24,
       "icon": "https://gateway.pinata.cloud/ipfs/QmUhpKiX532EjvCx7p2TLYVQ6ggwTWH1wkHtBnmPiZEzdo",
       "supply": 6669130772651554942,
-      "price_change_24h": 18.26655
+      "price_change_24h": 18.13129
     },
     {
       "address": "DRTeDJXZYYZxmq3tmgSPvLi3ef5E51cRH1KzzwXvC5M7",
@@ -548,10 +548,22 @@
       "market_cap": 369150,
       "price": 0.0004652626199516396,
       "holders": 112226,
-      "volume_24h": 9.89,
+      "volume_24h": 9.86,
       "icon": "https://gateway.irys.xyz/eZGctn7yTw3U3ORaKfBuj8pgUUJYfIyFklfXSv86ijg",
       "supply": 790396072045521,
-      "price_change_24h": 7.87172
+      "price_change_24h": 8.379
+    },
+    {
+      "address": "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump",
+      "name": "Vine Coin",
+      "symbol": "VINE",
+      "market_cap": 32130229,
+      "price": 0.03229335826978704,
+      "holders": 109764,
+      "volume_24h": 41337514,
+      "icon": "https://ipfs.io/ipfs/QmRtFJu3ZospaS4EAk17iNXZGAJp7gMxzvsZckZxbqZa5r",
+      "supply": 999986191267141,
+      "price_change_24h": 3.35424
     },
     {
       "address": "AcV2T3mwLUqMiiqcsafVm35zwPQkmLrfRtaW3716Fzvi",
@@ -560,10 +572,10 @@
       "market_cap": 0,
       "price": 0.0001547698623775525,
       "holders": 105833,
-      "volume_24h": 1400.03,
+      "volume_24h": 1397.09,
       "icon": "https://bafybeiba4x4i7ligecvxozxuofelmkmw4gqg7oda4smvwwmxmtbbcdbzky.ipfs.nftstorage.link",
       "supply": 496893099885065,
-      "price_change_24h": 2.29985
+      "price_change_24h": 2.67371
     },
     {
       "address": "3uejHm24sWmniGA5m4j4S1DVuGqzYBR5DJpevND4mivq",
@@ -582,12 +594,12 @@
       "name": "X Community",
       "symbol": "X",
       "market_cap": 2969315,
-      "price": 0.003000789801330678,
-      "holders": 102941,
-      "volume_24h": 100976,
+      "price": 0.0029783801772639332,
+      "holders": 102939,
+      "volume_24h": 100569,
       "icon": "https://bafkreia4rerl6cm7cegsy33fpzl57yzemfa5zk7gsgg5xbedfcbkv2dtca.ipfs.nftstorage.link",
       "supply": 98999007932772,
-      "price_change_24h": 6.81749
+      "price_change_24h": 7.69623
     },
     {
       "address": "FwBixtdcmxawRFzBNeUmzhQzaFuvv6czs5wCQuLgWWsg",
@@ -596,22 +608,22 @@
       "market_cap": 0,
       "price": 0.00028091281237192464,
       "holders": 102568,
-      "volume_24h": 2.73,
+      "volume_24h": 2.72,
       "icon": "https://bafybeichlgwyhbuo4c7v5cxlhqwwd7hy2xoirpsfukli4fc3ym5qlb4g4q.ipfs.nftstorage.link",
       "supply": 208565378334254,
-      "price_change_24h": 7.41421
+      "price_change_24h": 8.30435
     },
     {
       "address": "85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ",
       "name": "Wormhole Token",
       "symbol": "W",
       "market_cap": 254342169,
-      "price": 0.0873599299147235,
-      "holders": 101633,
-      "volume_24h": 31338153,
+      "price": 0.0876303089814741,
+      "holders": 101630,
+      "volume_24h": 31243719,
       "icon": "https://wormhole.com/token.png",
       "supply": 9999991152275602,
-      "price_change_24h": 3.43237
+      "price_change_24h": 3.58642
     },
     {
       "address": "FS66v5XYtJAFo14LiPz5HT93EUMAHmYipCfQhLpU4ss8",
@@ -620,10 +632,10 @@
       "market_cap": 0,
       "price": 0.008819731031282942,
       "holders": 101348,
-      "volume_24h": 4210.43,
+      "volume_24h": 4211.71,
       "icon": "https://cloudflare-ipfs.com/ipfs/QmXXiyBNz4PWiP73JicWvQBPvsKJG2uwsvF5obyNvUvL9h",
       "supply": 1399958447897919,
-      "price_change_24h": 6.3107
+      "price_change_24h": 6.29351
     },
     {
       "address": "CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu",
@@ -632,10 +644,10 @@
       "market_cap": 15334744,
       "price": 0.08518912082260414,
       "holders": 99610,
-      "volume_24h": 1176472,
+      "volume_24h": 1173226,
       "icon": "https://arweave.net/N7vCgQdgQ-fab28zEB4m8QRLMwI91_KcXI-Gtr151gg",
       "supply": 999996959892512528,
-      "price_change_24h": -0.03956
+      "price_change_24h": -0.00434
     },
     {
       "address": "cxxShYRVcepDudXhe7U62QHvw8uBJoKFifmzggGKVC2",
@@ -647,7 +659,7 @@
       "volume_24h": 6.78,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/cxxShYRVcepDudXhe7U62QHvw8uBJoKFifmzggGKVC2/logo.png",
       "supply": 9991589143086484349,
-      "price_change_24h": -0.21454
+      "price_change_24h": -0.17542
     },
     {
       "address": "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM",
@@ -656,46 +668,46 @@
       "market_cap": 0,
       "price": 0.08230485490786814,
       "holders": 92989,
-      "volume_24h": 67561,
+      "volume_24h": 67285,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM/logo.png",
       "supply": 3917852057208171,
-      "price_change_24h": 2.46601
+      "price_change_24h": 2.79374
     },
     {
       "address": "7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU",
       "name": "Samoyed Coin",
       "symbol": "SAMO",
-      "market_cap": 12219024,
+      "market_cap": 12257055,
       "price": 0.0025972246325652077,
-      "holders": 92905,
-      "volume_24h": 480749,
+      "holders": 92903,
+      "volume_24h": 458438,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU/logo.png",
       "supply": 5736491570031648806,
-      "price_change_24h": -0.31632
+      "price_change_24h": -0.73691
     },
     {
       "address": "SHDWyBxihqiCj6YekG2GUr7wqKLeLAMK1gHZck9pL6y",
       "name": "Shadow Token",
       "symbol": "SHDW",
       "market_cap": 23713958,
-      "price": 0.1469024678304013,
+      "price": 0.14714567007974227,
       "holders": 92836,
-      "volume_24h": 463502,
+      "volume_24h": 461076,
       "icon": "https://shdw-drive.genesysgo.net/FDcC9gn12fFkSU2KuQYH4TUjihrZxiTodFRWNF4ns9Kt/250x250_with_padding.png",
-      "supply": 169056105604223954,
-      "price_change_24h": 6.94601
+      "supply": 169056105601822063,
+      "price_change_24h": 6.33799
     },
     {
       "address": "69kdRLyP5DTRkpHraaSZAQbWmAwzF9guKjZfzMXzcbAs",
       "name": "American Coin",
       "symbol": "USA",
       "market_cap": 16413696,
-      "price": 0.000001406965990246713,
+      "price": 0.0000014133045566199113,
       "holders": 92749,
-      "volume_24h": 1171177,
+      "volume_24h": 1170825,
       "icon": "https://bafkreib3qfqu5wpwltn5vnr7asnu6vnvvxqm2mrppntqfntoxtqjmypawu.ipfs.nftstorage.link",
       "supply": 11627275236856471761,
-      "price_change_24h": 17.12726
+      "price_change_24h": 17.24866
     },
     {
       "address": "mb1eu7TzEc71KxDpsmsKoucSSuuoGLv1drys1oP2jh6",
@@ -703,59 +715,59 @@
       "symbol": "MOBILE",
       "market_cap": 10710551,
       "price": 0.0004186911456987152,
-      "holders": 92256,
-      "volume_24h": 1333537,
+      "holders": 92241,
+      "volume_24h": 1333262,
       "icon": "https://shdw-drive.genesysgo.net/6tcnBSybPG7piEDShBcrVtYJDPSvGrDbVvXmXKpzBvWP/mobile.png",
       "supply": 90219590932327114,
-      "price_change_24h": 10.36524
+      "price_change_24h": 9.86325
     },
     {
       "address": "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq",
       "name": "ZEUS",
       "symbol": "ZEUS",
       "market_cap": 98453147,
-      "price": 0.25495810284990583,
-      "holders": 92145,
-      "volume_24h": 12613038,
+      "price": 0.2549260047825526,
+      "holders": 92146,
+      "volume_24h": 12600942,
       "icon": "https://raw.githubusercontent.com/ZeusNetworkHQ/zeus-metadata/master/logo-v2.png",
       "supply": 999997458675716,
-      "price_change_24h": 10.51235
+      "price_change_24h": 10.68283
     },
     {
       "address": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof",
       "name": "Render Token",
       "symbol": "RENDER",
       "market_cap": 1642081363,
-      "price": 3.17659692120846,
-      "holders": 92102,
-      "volume_24h": 135279175,
+      "price": 3.1891837379225616,
+      "holders": 92105,
+      "volume_24h": 134666850,
       "icon": "https://shdw-drive.genesysgo.net/5zseP54TGrcz9C8HdjZwJJsZ6f3VbP11p1abwKWGykZH/rndr.png",
       "supply": 41191762295649680,
-      "price_change_24h": 7.56315
+      "price_change_24h": 8.44704
     },
     {
       "address": "GHichsGq8aPnqJyz6Jp1ASTK4PNLpB5KrD6XrfDjpump",
       "name": "just buy $1 worth of this coin",
       "symbol": "$1",
       "market_cap": 15262086,
-      "price": 0.015312568978944903,
-      "holders": 91804,
-      "volume_24h": 12667901,
+      "price": 0.015485294229362196,
+      "holders": 91810,
+      "volume_24h": 12634090,
       "icon": "https://ipfs.io/ipfs/QmcZXuGv73VTwWjR6gZqJ9BjEHKuPXAN9WXjFtQJhesiMW",
       "supply": 999796782135880,
-      "price_change_24h": 49.31311
+      "price_change_24h": 51.81325
     },
     {
       "address": "4vMsoUT2BWatFweudnQM1xedRLfJgJ7hswhcpz4xgBTy",
       "name": "HONEY",
       "symbol": "HONEY",
       "market_cap": 159011507,
-      "price": 0.038186259827127124,
-      "holders": 90473,
-      "volume_24h": 512816,
+      "price": 0.03831672516493839,
+      "holders": 90470,
+      "volume_24h": 522280,
       "icon": "https://hivemapper-marketing-public.s3.us-west-2.amazonaws.com/Hivemapper_HONEY_token.png",
       "supply": 6422247801710910345,
-      "price_change_24h": -0.41458
+      "price_change_24h": -0.18657
     },
     {
       "address": "GRUmPYbiTpq9ZPy5LAqBMMze7kErf5dEX2i9qYfwoSmR",
@@ -764,106 +776,106 @@
       "market_cap": 654936,
       "price": 0.00006936813017926749,
       "holders": 90326,
-      "volume_24h": 23.97,
+      "volume_24h": 31.99,
       "icon": "https://ipfs.io/ipfs/QmezkzHwWJGTR8hsaFj9rRVfNPUzKCJmWfhhWgP591x2xr",
       "supply": 9419354145457631205,
-      "price_change_24h": 7.72459
+      "price_change_24h": 8.96458
     },
     {
       "address": "AKzAhPPLMH5NG35kGbgkwtrTLeGyVrfCtApjnvqAATcm",
       "name": "OI",
       "symbol": "OI",
       "market_cap": 47802362,
-      "price": 47384831.849050224,
+      "price": 48920189.37274238,
       "holders": 88964,
-      "volume_24h": 53226,
+      "volume_24h": 52862,
       "icon": "https://gateway.pinata.cloud/ipfs/QmSpqiXUd7Yr8GxLyqieMa1jbHFkGZDDM94sTHbr4QQt48",
       "supply": 999986477,
-      "price_change_24h": 7.77245
+      "price_change_24h": 7.61942
     },
     {
       "address": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
       "name": "Goatseus Maximus",
       "symbol": "GOAT",
       "market_cap": 57197763,
-      "price": 0.05712852712405254,
-      "holders": 88632,
-      "volume_24h": 19349993,
+      "price": 0.056971581564767566,
+      "holders": 88635,
+      "volume_24h": 19473942,
       "icon": "https://ipfs.io/ipfs/QmapAq9WtNrtyaDtjZPAHHNYmpSZAQU6HywwvfSWq4dQVV",
       "supply": 999994803961755,
-      "price_change_24h": 5.36068
+      "price_change_24h": 5.1342
     },
     {
       "address": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82",
       "name": "BOOK OF MEME",
       "symbol": "BOME",
       "market_cap": 97516158,
-      "price": 0.00140619262360553,
+      "price": 0.0014099500886123211,
       "holders": 86938,
-      "volume_24h": 49470604,
+      "volume_24h": 49721672,
       "icon": "https://bafkreihztk5poge7f2lz6logfjmhc7h7u6shvgacoktnuezks5oblmieue.ipfs.nftstorage.link",
       "supply": 68953187287893964,
-      "price_change_24h": 3.21728
+      "price_change_24h": 3.45651
     },
     {
       "address": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
       "name": "Orca",
       "symbol": "ORCA",
       "market_cap": 81221069,
-      "price": 1.506857453134959,
-      "holders": 86521,
-      "volume_24h": 20837597,
+      "price": 1.5107132459881263,
+      "holders": 86520,
+      "volume_24h": 20856561,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE/logo.png",
       "supply": 99999711507010,
-      "price_change_24h": 3.59132
+      "price_change_24h": 3.45946
     },
     {
       "address": "5LafQUrVco6o7KMz42eqVEJ9LW31StPyGjeeu5sKoMtA",
       "name": "Mumu the Bull",
       "symbol": "MUMU",
       "market_cap": 6633694,
-      "price": 0.0000028571443427554562,
-      "holders": 86381,
-      "volume_24h": 584068,
+      "price": 0.000002862098914960398,
+      "holders": 86382,
+      "volume_24h": 561141,
       "icon": "https://bafkreihszutctvdmdlyjtzfmj7rgvdorpc7jchj2td3feypc7veidbkpsu.ipfs.nftstorage.link",
       "supply": 2329799743429915868,
-      "price_change_24h": 8.1701
+      "price_change_24h": 8.41477
     },
     {
       "address": "BZLbGTNCSFfoth2GYDtwr7e4imWzpR5jqcUuGEwr646K",
       "name": "IO",
       "symbol": "IO",
       "market_cap": 121615804,
-      "price": 0.8239776681385821,
+      "price": 0.8270841198028507,
       "holders": 86064,
-      "volume_24h": 26754413,
+      "volume_24h": 26769102,
       "icon": "https://bafkreicnqsbhpzxiasdm5esr7fqi3vcjvcbfefo4sq4y3ff747rfqf7w7i.ipfs.nftstorage.link",
       "supply": 79999998092013279,
-      "price_change_24h": 3.41028
+      "price_change_24h": 3.61491
     },
     {
       "address": "DiSetnR7k57wmfvywJhUVjPwWfg54SdQKxQdJEBYW23B",
       "name": "DNA",
       "symbol": "DNA",
       "market_cap": 764967,
-      "price": 1.7896729622047575E-11,
+      "price": 1.7845090468398962E-11,
       "holders": 85284,
-      "volume_24h": 384466,
+      "volume_24h": 383477,
       "icon": "https://gateway.irys.xyz/ntX969kBTCUGiMHtaiNl7uwiHEV6iwcsAs31lZG58qM",
       "supply": 4200619268059489109,
-      "price_change_24h": 11.30928
+      "price_change_24h": 12.0292
     },
     {
       "address": "2qEHjDLDLbuBgRYvsxhc5D6uDWAivNFZGan56P1tpump",
       "name": "Peanut the Squirrel ",
       "symbol": "Pnut ",
       "market_cap": 203120081,
-      "price": 0.19824403827314094,
+      "price": 0.1988944306902647,
       "holders": 84411,
-      "volume_24h": 410143537,
+      "volume_24h": 411899822,
       "icon": "https://ipfs.io/ipfs/QmNdTtJauw39u4DzGyTaZ35rRx4VgAxqb91wE89zjyHWd2",
       "supply": 999853059426746,
-      "price_change_24h": 15.85284
+      "price_change_24h": 16.15163
     },
     {
       "address": "LMFzmYL6y1FX8HsEmZ6yNKNzercBmtmpg2ZoLwuUboU",
@@ -872,30 +884,30 @@
       "market_cap": 78845,
       "price": 0.010654521416330538,
       "holders": 84063,
-      "volume_24h": 1026.52,
+      "volume_24h": 1027.59,
       "icon": "https://www.lamas.co/resource/lmf_token.png",
       "supply": 7367872361775820,
-      "price_change_24h": 2.94916
+      "price_change_24h": 3.94995
     },
     {
       "address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
       "name": "GIGACHAD",
       "symbol": "GIGA",
       "market_cap": 128043753,
-      "price": 0.01321691164458646,
-      "holders": 83055,
-      "volume_24h": 13424465,
+      "price": 0.013283777424199113,
+      "holders": 83054,
+      "volume_24h": 13355235,
       "icon": "https://bafybeifiyvpbr3kd6wepax4qxdlxbjrpz2de4lqsuwwuihirvaal6kqwba.ipfs.nftstorage.link",
       "supply": 960391194673937,
-      "price_change_24h": 9.51112
+      "price_change_24h": 9.08824
     },
     {
       "address": "h5NciPdMZ5QCB5BYETJMYBMpVx9ZuitR6HcVjyBhood",
       "name": "Robinhood",
       "symbol": "HOOD",
       "market_cap": 5483460,
-      "price": 0.00008274222116208511,
-      "holders": 79975,
+      "price": 0.00008429946102244697,
+      "holders": 79974,
       "volume_24h": 4653161,
       "icon": "https://gateway.pinata.cloud/ipfs/bafkreihz4vfass23wcohztnlslueetpbpgm2rvvlsioxbhdh3v6kjm7cuy",
       "supply": 44544290150176925,
@@ -908,10 +920,10 @@
       "market_cap": 0,
       "price": 0.008444734956277102,
       "holders": 78755,
-      "volume_24h": 11208.99,
+      "volume_24h": 11199.66,
       "icon": "https://shdw-drive.genesysgo.net/2F9tju1WHwocrTHj2iRoLhhVqbgQJusdUgkYNL84wKf4/$SHARK_logo_round.png",
       "supply": 99983658182520,
-      "price_change_24h": -1.64342
+      "price_change_24h": -2.01926
     },
     {
       "address": "5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC",
@@ -919,107 +931,107 @@
       "symbol": "PONKE",
       "market_cap": 54434196,
       "price": 0.09831964956317302,
-      "holders": 77400,
-      "volume_24h": 6076155,
+      "holders": 77399,
+      "volume_24h": 6073955,
       "icon": "",
       "supply": 555539716255307674,
-      "price_change_24h": 6.28019
+      "price_change_24h": 6.27249
     },
     {
       "address": "A8C3xuqscfmyLrte3VmTqrAq8kgMASius9AFNANwpump",
       "name": "FWOG",
       "symbol": "FWOG",
       "market_cap": 42461549,
-      "price": 0.04339053206320685,
-      "holders": 75897,
-      "volume_24h": 4517151,
+      "price": 0.043666614027357026,
+      "holders": 75902,
+      "volume_24h": 4373804,
       "icon": "https://cf-ipfs.com/ipfs/QmQ4H6Y23dSEjn9LKB85M7KpVFiDu6KfDNZAcrqiCwFQQH",
       "supply": 975622113799114,
-      "price_change_24h": 2.83402
+      "price_change_24h": 2.87415
     },
     {
       "address": "4Cnk9EPnW5ixfLZatCPJjDB1PUtcRpVVgTQukm9epump",
       "name": "DADDY TATE",
       "symbol": "DADDY",
       "market_cap": 25160847,
-      "price": 0.042613317284056915,
-      "holders": 73359,
-      "volume_24h": 993805,
+      "price": 0.04262905316931705,
+      "holders": 73360,
+      "volume_24h": 1446821,
       "icon": "https://cf-ipfs.com/ipfs/QmXQ2NFebNVS1GQGvdXpj8PLM8H1P96A7pRVXF6geMtrnJ",
       "supply": 599642493295562,
-      "price_change_24h": 4.0147
+      "price_change_24h": 5.18965
     },
     {
       "address": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
       "name": "zerebro",
       "symbol": "ZEREBRO",
       "market_cap": 28573488,
-      "price": 0.028362194657783616,
+      "price": 0.02839837052234096,
       "holders": 70996,
-      "volume_24h": 13868477,
+      "volume_24h": 13793785,
       "icon": "https://ipfs.io/ipfs/QmZ1HDSibY2LdEmC1tPHK36ApGCQACJENqsbPsT2nc29AD",
       "supply": 999965084907465,
-      "price_change_24h": -1.41044
+      "price_change_24h": -2.86953
     },
     {
       "address": "25hAyBQfoDhfWx9ay6rarbgvWGwDdNqcHsXS3jQ3mTDJ",
       "name": "MANEKI",
       "symbol": "MANEKI",
       "market_cap": 10780445,
-      "price": 0.0012131362527508665,
+      "price": 0.0012110973734037393,
       "holders": 70701,
-      "volume_24h": 4735689,
+      "volume_24h": 5127204,
       "icon": "https://i.ibb.co/Jnz56gp/Maneki-PFP.png",
       "supply": 885872976365688,
-      "price_change_24h": 7.04356
+      "price_change_24h": 7.1653
     },
     {
       "address": "Hax9LTgsQkze1YFychnBLtFH8gYbQKtKfWKKg2SP6gdD",
       "name": "TARS AI",
       "symbol": "TAI",
       "market_cap": 43726755,
-      "price": 0.07229067266632175,
-      "holders": 70242,
-      "volume_24h": 6113741,
+      "price": 0.07218471586844002,
+      "holders": 70243,
+      "volume_24h": 6108762,
       "icon": "https://coffee-important-lizard-419.mypinata.cloud/ipfs/Qmf19J2Teszt5ZgqrzQFuWk64xvQzfZFfEEn8ntzpbz36W",
       "supply": 894992432085326871,
-      "price_change_24h": 5.68599
+      "price_change_24h": 5.53038
     },
     {
       "address": "BCNT4t3rv5Hva8RnUtJUJLnxzeFAabcYp8CghC1SmWin",
       "name": "BCGame Coin",
       "symbol": "BC",
       "market_cap": 37023067,
-      "price": 0.0037178991151069134,
-      "holders": 68804,
-      "volume_24h": 6520.67,
+      "price": 0.003706662899000882,
+      "holders": 68803,
+      "volume_24h": 6492.63,
       "icon": "https://gateway.irys.xyz/gTu1gCg7KPo0mZSUHsAjEHg4pkKlYZszNyK3A2pb_x4",
       "supply": 9997938574428114,
-      "price_change_24h": 5.56328
+      "price_change_24h": 5.64434
     },
     {
       "address": "sSo14endRuUbvQaJS3dq36Q829a3A6BEfoeeRGJywEh",
       "name": "Solayer SOL",
       "symbol": "sSOL",
       "market_cap": 93623525,
-      "price": 141.98850617311516,
+      "price": 141.95458948639262,
       "holders": 68785,
-      "volume_24h": 510524,
+      "volume_24h": 500052,
       "icon": "https://raw.githubusercontent.com/solayer-labs/token-metadata/main/logo.jpg",
-      "supply": 659339119109854,
-      "price_change_24h": 7.71622
+      "supply": 659338963109854,
+      "price_change_24h": 8.05336
     },
     {
       "address": "AxriehR6Xw3adzHopnvMn7GcpRFcD41ddpiTWMg6pump",
       "name": "Stool Prisondente",
       "symbol": "jailstool",
       "market_cap": 9566508,
-      "price": 0.009538172019102464,
-      "holders": 68690,
-      "volume_24h": 10752779,
+      "price": 0.009447666353919602,
+      "holders": 68684,
+      "volume_24h": 10721032,
       "icon": "https://ipfs.io/ipfs/QmeLJyTUjKbU6E47DqZGaPHdktRQi8HyJynmcSyghUbLjw",
       "supply": 999821973540591,
-      "price_change_24h": -2.91489
+      "price_change_24h": -3.78401
     },
     {
       "address": "21rweMLGYeMNonHW7H3xa5py17X6ZFRcHirCp9inRBQA",
@@ -1028,10 +1040,10 @@
       "market_cap": 743338,
       "price": 0.0000014779605086120634,
       "holders": 68460,
-      "volume_24h": 3486.81,
+      "volume_24h": 3491.38,
       "icon": "https://arweave.net/6KljMJ7KsWcEhyVXXP7R17_B4nrViaj5o1l9vPMlKbA",
       "supply": 504730924481639968,
-      "price_change_24h": 8.31724
+      "price_change_24h": 8.51564
     },
     {
       "address": "5jFnsfx36DyGk8uVGrbXnVUMTsBkPXGpx6e69BiGFzko",
@@ -1050,24 +1062,24 @@
       "name": "Moo Deng",
       "symbol": "MOODENG",
       "market_cap": 39772599,
-      "price": 0.03995061245197241,
-      "holders": 67203,
-      "volume_24h": 63068476,
+      "price": 0.039916226735008,
+      "holders": 67208,
+      "volume_24h": 61234690,
       "icon": "https://ipfs.io/ipfs/Qmf1g7dJZNDJHRQru7E7ENwDjcvu7swMUB6x9ZqPXr4RV2",
       "supply": 989942212394053,
-      "price_change_24h": 6.70516
+      "price_change_24h": 6.66984
     },
     {
       "address": "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP",
       "name": "test griffain.com",
       "symbol": "GRIFFAIN",
       "market_cap": 41535698,
-      "price": 0.041359745507469965,
-      "holders": 66478,
-      "volume_24h": 19337962,
+      "price": 0.04135239746043387,
+      "holders": 66480,
+      "volume_24h": 19324965,
       "icon": "https://griffain.com/logo.png",
       "supply": 999871240355206,
-      "price_change_24h": -4.95904
+      "price_change_24h": -6.54266
     },
     {
       "address": "CooL79s3d23Zd2RfMXTRmUnfbAWBt4H6thn4sVkmYR9h",
@@ -1098,12 +1110,12 @@
       "name": "JITO",
       "symbol": "JTO",
       "market_cap": 679958246,
-      "price": 2.2191346871146034,
-      "holders": 65091,
-      "volume_24h": 32531575,
+      "price": 2.2306409849133133,
+      "holders": 65093,
+      "volume_24h": 32903599,
       "icon": "https://metadata.jito.network/token/jto/image",
       "supply": 999999764137276111,
-      "price_change_24h": 3.05573
+      "price_change_24h": 3.08568
     },
     {
       "address": "RLBxxFkseAZ4RgJH3Sqn8jXxhmGoz9jWxDNJMh8pL7a",
@@ -1122,12 +1134,12 @@
       "name": "BlazeStake Staked SOL (bSOL)",
       "symbol": "bSOL",
       "market_cap": 0,
-      "price": 160.01758266178845,
+      "price": 159.98426888020197,
       "holders": 63970,
-      "volume_24h": 377066,
+      "volume_24h": 378512,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/bSo13r4TkiE4KumL71LsHTPpL2euBYLFx6h9HP3piy1/logo.png",
-      "supply": 930882664324373,
-      "price_change_24h": 7.45392
+      "supply": 930882997342914,
+      "price_change_24h": 7.90629
     },
     {
       "address": "Doggoyb1uHFJGFdHhJf8FKEBUMv58qo98CisWgeD7Ftk",
@@ -1136,46 +1148,46 @@
       "market_cap": 0,
       "price": 1.3311238316110173E-9,
       "holders": 63417,
-      "volume_24h": 21483,
+      "volume_24h": 21498,
       "icon": "https://shdw-drive.genesysgo.net/BBwXjBB6LtWGjKW5GveUSau5z9KZv2CK5AWmb7FCDF6K/doggies_coin.png",
       "supply": 18395679778975312077,
-      "price_change_24h": 10.41779
+      "price_change_24h": 11.05377
     },
     {
       "address": "n54ZwXEcLnc3o7zK48nhrLV4KTU5wWD4iq7Gvdt5tik",
       "name": "Peepo",
       "symbol": "PEEP",
       "market_cap": 0,
-      "price": 0.0000041799494024002,
+      "price": 0.000004191047421830839,
       "holders": 63406,
-      "volume_24h": 341.72,
+      "volume_24h": 341.48,
       "icon": "https://arweave.net/QA7H--VOnRLJnj96IleDWsYJht_RRiA6SWommUMroJ4",
       "supply": 54836722732522791,
-      "price_change_24h": 6.45088
+      "price_change_24h": 7.22579
     },
     {
       "address": "27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4",
       "name": "Jupiter Perps LP",
       "symbol": "JLP",
       "market_cap": 0,
-      "price": 3.7897537547079883,
-      "holders": 63036,
-      "volume_24h": 32084965,
+      "price": 3.7926631469113725,
+      "holders": 63039,
+      "volume_24h": 32056943,
       "icon": "https://static.jup.ag/jlp/icon.png",
       "supply": 382703762184374,
-      "price_change_24h": 3.6927
+      "price_change_24h": 4.02779
     },
     {
       "address": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey",
       "name": "Marinade",
       "symbol": "MNDE",
       "market_cap": 39149637,
-      "price": 0.09253165650246707,
-      "holders": 62631,
-      "volume_24h": 15108107,
+      "price": 0.09096919701683025,
+      "holders": 62630,
+      "volume_24h": 14975068,
       "icon": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey/logo.png",
       "supply": 999998585906736967,
-      "price_change_24h": 9.66804
+      "price_change_24h": 9.52351
     },
     {
       "address": "DuhSwRVN7z8bWjYzwtRv2uDfpAsbTPxDnDezzi9Nsf1y",
@@ -1184,22 +1196,10 @@
       "market_cap": 0,
       "price": 0.00003297985855638716,
       "holders": 57331,
-      "volume_24h": 84.03,
+      "volume_24h": 83.84,
       "icon": "https://bafybeibq32m5qd6244hxl35bbi5l3wkx3uqi2xhlghtbcumkxntysa3owq.ipfs.nftstorage.link",
       "supply": 978743681952661,
-      "price_change_24h": 8.08129
-    },
-    {
-      "address": "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump",
-      "name": "Vine Coin",
-      "symbol": "VINE",
-      "market_cap": 32130229,
-      "price": 0.032492472070802775,
-      "holders": 0,
-      "volume_24h": 0,
-      "icon": "",
-      "supply": 0,
-      "price_change_24h": 0
+      "price_change_24h": 8.64155
     }
   ]
 }
